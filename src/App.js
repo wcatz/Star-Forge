@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Drawer from "./components/Drawer";
 import Footer from "./components/Footer";
@@ -9,10 +8,10 @@ import { About } from './pages/About';
 
 const App = () => (
   <BrowserRouter>
-    <Navbar class="container"/>
-    <div class="drawer drawer-end">
-      <input id="my-drawer-4" type="checkbox" class="drawer-toggle"></input>
-      <div class="drawer-content">
+    <Navbar className="container"/>
+    <div className="drawer drawer-end">
+      <input id="my-drawer-4" type="checkbox" className="drawer-toggle"></input>
+      <div className="drawer-content">
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/about" exact component={About} />
@@ -21,7 +20,6 @@ const App = () => (
       <Drawer />
     </div>
     <Footer />
-
   </BrowserRouter>
 
 );
