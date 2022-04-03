@@ -27,7 +27,7 @@ const Navbar = () => {
               </Link></li>
             <li><a>Portfolio</a></li>
             <li>
-              <Link to="/About"
+              <Link to="/about"
                 className="App-link">
                 About
               </Link></li>
@@ -35,7 +35,7 @@ const Navbar = () => {
         </div>
       </div>
       <div class="navbar-center">
-        <a class="btn btn-ghost normal-case text-xl">🌟 Star Forge ⚡</a>
+        <a href="/" class="btn btn-ghost normal-case text-xl">🌟 Star Forge ⚡</a>
       </div>
       <div class="navbar-end">
         <label class="swap swap-rotate">

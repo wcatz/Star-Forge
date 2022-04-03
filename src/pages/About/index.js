@@ -2,7 +2,7 @@ import logo from '../../logo.svg';
 import './style.css';
 import { Link } from 'react-router-dom';
 
-export function PageTwo() {
+export function About() {
   return (
     <div className="App">
       <header className="App-header">
