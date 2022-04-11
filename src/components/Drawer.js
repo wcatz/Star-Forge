@@ -17,12 +17,11 @@ const Drawer = () => {
 
   return (
 
-    <div className="drawer-side text-center overflow-hidden">
+    <div className="absolute top-0 right-0 z-index-200 text-center overflow-hidden">
        <label htmlFor="my-drawer-4" className="drawer-overlay"></label>
-      <ul className="menu p-4 overflow-y-auto w-80 bg-secondary bg-opacity-0 text-base-content">
+      <ul className="menu bg-base-100 w-56 rounded-box">
 
         <div className="stats stats-vertical shadow bg-secondary bg-opacity-50 indigo-500 ring-inset ring-2">
-
           <div className="stat">
             <div className="stat-title">Pools Rank</div>
             <div className="stat-value"># {res.rank}</div>

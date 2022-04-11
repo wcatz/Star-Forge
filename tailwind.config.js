@@ -14,10 +14,10 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  plugins: [require('@tailwindcss/aspect-ratio'), require('@tailwindcss/typography'), require('daisyui')],
     // daisyUI config (optional)
     daisyui: {
-      themes: ["luxury", "garden"],
+      themes: ["luxury", "aqua"],
       darkTheme: "luxury"
     },
 }

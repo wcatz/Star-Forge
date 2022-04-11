@@ -1,18 +1,19 @@
+//import Hero from "../../components/Hero";
 
-import Hero from "../../components/Hero";
-import HomeContent from "../../components/HomeContent";
+import NewHero from "../../components/Newhero";
+import Hometop from "../../components/Hometop";
+import Homemiddle from "../../components/Homemiddle";
+import Menu from "../../components/Menu";
 
-import './style.css';
+import "./style.css";
 
 export function HomePage() {
-
   return (
     <>
-      <Hero
-        className="" />
-      <HomeContent
-        className="" />
+      <NewHero />
+      <Menu />
+      <Hometop />
+      <Homemiddle />
     </>
-
   );
 }

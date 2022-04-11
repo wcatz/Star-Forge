@@ -1,35 +1,13 @@
-import { NavLink } from "react-router-dom";
+import Menulist from "./Menulist";
 
 
 const Menu = () => {
-
   return (
-    <div className="relative">
-      <div class="absolute inset-y-48 left-5 w-16 hidden md:block">
-        <ul class="menu bg-secondary bg-opacity-50 indigo-500 ring-inset ring-2 w-56 rounded-box">
-          <li>
-            <NavLink exact to={'/'}
-              activeClassName="bordered"
-              className="App-NavLink">
-              Home
-            </NavLink></li>
-          <li><NavLink exact to={'/gallery'}
-            activeClassName="bordered"
-            className="App-NavLink">
-            Gallery
-          </NavLink></li>
-          <li>
-            <NavLink exact to={'/about'}
-              activeClassName="bordered"
-              className="App-NavLink">
-              About
-            </NavLink></li>
-          <li><label htmlFor="my-drawer-4" className="">View pool Stats</label>
-          </li>
-          <li></li>
-        </ul>
-      </div>
+    <div className="absolute w-48 inset-x-10 inset-y-48 hidden lg:block">
+      <ul className="menu menu-compact p-2 w-48 rounded-box bg-secondary bg-opacity-50 mb-1 border-t-2 border-2 border-indigo-500 rounded-t-lg overflow-hidden">
+        <Menulist />
+      </ul>
     </div>
   );
-}
+};
 export default Menu;
