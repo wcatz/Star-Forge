@@ -33,7 +33,7 @@ const Hud = () => {
   return (
     <div className="hidden lg:block">
       <div className="flex justify-center text-center">
-        <dl className="flex flex-cols-1 gap-2 sm:flex-cols-7 bg-secondary bg-opacity-50 mb-1 border-t-2 border-l-2 border-r-2 border-indigo-500 rounded-t-lg">
+        <dl className="flex flex-cols-1 gap-2 sm:flex-cols-7 bg-secondary bg-opacity-50 mb-1 border-t-2 border-l-2 border-r-2 border-accent rounded-t-lg">
           <div className="px-4 py-5 sm:p-6">
             <dt className="text-sm font-medium truncate">Blocks</dt>
             <dd className="mt-1 text-3xl font-semibold 0">{totalBlocks}</dd>
@@ -80,7 +80,7 @@ const Hud = () => {
             </dd>
           </div>
           <div className="px-4 py-5 sm:p-6">
-            <dt className="text-sm font-medium truncate">Luck</dt>
+            <dt className="text-sm font-medium truncate">Favor</dt>
             <dd className="mt-1 text-3xl font-semibold 0">
               {res.luck_lifetime}%
             </dd>

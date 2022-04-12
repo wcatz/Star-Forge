@@ -1,11 +1,10 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-//import Drawer from "./components/Drawer";
 import Footer from "./components/Footer";
 import { HomePage } from "./pages/Home";
 import { AboutPage } from "./pages/About";
 import { GalleryPage } from "./pages/Gallery";
-//import Menu from "./components/Menu";
+
 
 const App = () => (
   <BrowserRouter>

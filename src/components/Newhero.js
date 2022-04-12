@@ -16,8 +16,8 @@ export default function Newhero() {
         <Hud />
       </div>
       <div
-        className="bg-cover bg-center relative starscreen overflow-hidden rounded-b-[100px] md:rounded-b-[200px] border-b-4 border-indigo-500"
-        style={{ backgroundImage: "url(../../images/stake-pool-hero.jpg)" }}
+        className="bg-cover bg-center relative starscreen overflow-hidden rounded-b-[100px] md:rounded-b-[200px] border-b-4 border-accent"
+        style={{ backgroundImage: "url(../../stake-pool-hero.jpg)" }}
       >
         <Topnav />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-7xl">
@@ -26,8 +26,8 @@ export default function Newhero() {
               heading=""
               messages={[
                 "Welcome user",
-                "Core system is authenticated with Ouroboros",
-                "and validating transactions",
+                "Core is authenticated",
+                "Validating transactions",
                 "All systems are nominal",
                 "Have a nice day.",
               ]}

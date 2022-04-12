@@ -64,7 +64,7 @@ class Typer extends Component {
     return (
       <>
         <h1>{this.state.text1}</h1>
-        <p> {this.state.text2}</p>
+        <p className="text-2xl"> {this.state.text2}</p>
       </>
     );
   }

@@ -1,45 +1,23 @@
-import React, { Component } from "react";
+import reactDom from "react-dom"
+import react from "react"
+import Hud from "./Hud"
 
-class ToggleBox extends React.Component {
 
-	constructor(props) {
-		super(props);
-		this.state = {
-			opened: false,
-		};
-		this.toggleBox = this.toggleBox.bind(this);
-	}
-  
-	toggleBox() {
-		const { opened } = this.state;
-		this.setState({
-			opened: !opened,
-		});
-	}
-  
-	render() {
-		var { title, children } = this.props;
-		const { opened } = this.state;
-
-		if (opened){
-			title ='Hide Vehicles';
-		}else{
-			title ='Show Vehicles';
-		}
-
-		return (
-			<div className="box">
-				<div className="boxTitle" onClick={this.toggleBox}>
-					{title}
-				</div>
-				{opened && (					
-					<div className="boxContent">
-						{children}
-					</div>
-				)}
-			</div>
-		);
-	}
+const Search = () => {
+  const [showResults, setShowResults] = react.useState(false)
+  const onClick = () => setShowResults(true)
+  return (
+    <div>
+       <label type="submit" value="Search" onClick={onClick} tabIndex="0" className="mx-5 mt-5 btn btn-outline btn-success animate-pulse"></label>
+      { showResults ? <Results /> : null }
+    </div>
+  )
 }
 
-export default ToggleBox;
+const Results = () => (
+  <div id="results" className="search-results">
+<Hud />
+  </div>
+)
+
+reactDom.render(<Search />, document.querySelector("#hud"))

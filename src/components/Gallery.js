@@ -4,13 +4,13 @@ const files = [
   {
     title: "IMG_4985.HEIC",
     size: "3.9 MB",
-    source: "../images/stake-pool-hero.jpg",
+    source: "./m1-star-forge.jpg",
   },
   {
     title: "IMG_4985.HEIC",
     size: "3.9 MB",
     source:
-      "../images/m2-star-forge.jpg",
+      "./m1-star-forge.jpg",
   },
   {
     title: "IMG_4985.HEIC",

@@ -1,29 +1,28 @@
-import { CameraIcon } from "@heroicons/react/solid";
 import Cover from "../pages/About/images/better-img.png";
-import Hud from "./Hud";
 
 const Homemiddle = () => {
   return (
     <div className="overflow-hidden">
-      <div className="relative py-4 sm:py-6 lg:py-12">
+      <div className="relative py-2 sm:py-3 lg:py-4">
         <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-          <label tabIndex="0" className="mx-5 mt-5 btn btn-outline">
-            Click
+        <div className="hidden md:block">
+          <label tabIndex="0" className="mx-5 mt-5 btn btn-outline btn-success animate-pulse">
+            Pool Stats
           </label>
+          </div>
           <h1 className="text-4xl mt-5 font-semibold tracking-wider text-primary-500 bg-gradient-to-r from-primary-400 via-primary-500 to-primary-700 text-gradient uppercase">
             🌟 Star Forge ⚡
           </h1>
           <p className="mt-2 text-2xl font-extrabold tracking-tight sm:text-4xl">
-            Professional Cardano Stake Pool
+            Cardano Stake Pool
           </p>
           <p className="mt-5 max-w-prose mx-auto text-xl">
             The Star Forge was built to showcase just how efficient EVERYONES
             favorite blockchain is.
           </p>
-          <button className="mx-5 mt-5 btn btn-outline">pool.pm</button>
-          <button className="mx-5 mt-5 btn btn-outline">Cardanoscan</button>
-          <button className="mx-5 mt-5 btn btn-outline">Pool Tool</button>
-          <button className="mx-5 mt-5 btn btn-outline">Button</button>
+          <a rel="nofollow" href="https://pool.pm/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae" className="mx-5 mt-5 btn btn-ghost border-accent hover:border-accent">pool.pm</a>
+          <a rel="nofollow" href="https://cardanoscan.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae" className="mx-5 mt-5 btn btn-ghost border-accent hover:border-accent">Cardanoscan</a>
+          <a rel="nofollow" href="https://pooltool.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae" className="mx-5 mt-5 btn btn-ghost border-accent hover:border-accent">Pool Tool</a>
         </div>
       </div>
       <div className="relative max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
@@ -38,7 +37,7 @@ const Homemiddle = () => {
         <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
           <div className="relative lg:row-start-1 lg:col-start-2">
             <svg
-              className="hidden lg:block absolute top-2 right-2 -mt-20 -mr-20 text-indigo-500"
+              className="hidden lg:block absolute top-2 right-2 -mt-20 -mr-20 text-accent"
               width={404}
               height={384}
               fill="none"
@@ -74,7 +73,7 @@ const Homemiddle = () => {
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                   <img
-                    className="rounded-lg shadow-lg object-cover object-center outline outline-2 outline-indigo-500 hover:outline-indigo-400"
+                    className="rounded-lg shadow-lg object-cover object-center outline outline-2 outline-accent"
                     src={Cover}
                     alt="Cardano Stake Pool Star Forge"
                     width={599}
