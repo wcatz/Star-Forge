@@ -17,44 +17,34 @@ const images = importAll(
 
 const files = [
   {
-    title: "Star Forge",
-    caption: "Next generatio Stake Pool",
+    title: "Star Forge ",
+    caption: "Next generation ARM64 Stake Pool",
     source: images["m1-star-forge.jpg"],
   },
   {
-    title: "IMG_4985.HEIC",
-    caption: "3.9 MB",
+    title: "Off The Grid",
+    caption: "110 Watt Power Consumption",
     source: images["m2-star-forge.jpg"],
   },
   {
-    title: "IMG_4985.HEIC",
-    caption: "3.9 MB",
+    title: "Apple Silicon Arch Linux",
+    caption: "Mac M1 Mini 6 watt draw each",
     source: images["m3-star-forge.jpg"],
   },
   {
-    title: "IMG_4985.HEIC",
-    caption: "3.9 MB",
-    source: images["m4-star-forge.jpg"],
+    title: "Original Forge Box",
+    caption: "Berry group nostalgia",
+    source: images["delegate-cardano.jpg"],
   },
   {
-    title: "IMG_4985.HEIC",
-    caption: "3.9 MB",
-    source: images["m1-star-forge.jpg"],
+    title: "12 Watt Stake Pool",
+    caption: "Raspberry Pi 4 Stake Pool",
+    source: images["stake-cardano.jpg"],
   },
   {
-    title: "IMG_4985.HEIC",
-    caption: "3.9 MB",
-    source: images["m1-star-forge.jpg"],
-  },
-  {
-    title: "IMG_4985.HEIC",
-    caption: "3.9 MB",
-    source: images["m1-star-forge.jpg"],
-  },
-  {
-    title: "IMG_4985.HEIC",
-    caption: "3.9 MB",
-    source: images["m1-star-forge.jpg"],
+    title: "Learn to Build",
+    caption: "Guide and Image for Pi-Node",
+    source: images["star-forge-cardano-stake-pool.jpg"],
   },
 ];
 
@@ -66,32 +56,35 @@ export function GalleryPage() {
     <>
       <Topnav />
       <Menu />
-      <div className="container mt-36">
-        <ul className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8">
+      <div className="container mb-24 mt-36">
+      <div className="flex items-center justify-center">
+        <ul className="grid w-3/4 grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8">
           {files.map((file) => (
             <li key={file.source} className="relative">
-              <div className="group block w-full aspect-w-12 aspect-h-10 rounded-lg focus-within:ring-2 focus-within:ring-indigo-500 overflow-hidden">
+              <div className="group block w-full aspect-w-12 aspect-h-10 rounded-lg outline outline-2 outline-accent overflow-hidden">
                 <img
+                  title={file.title}
                   src={file.source}
-                  alt=""
-                  className="object-cover pointer-events-none group-hover:opacity-75"
+                  alt={file.caption}
+                  className="object-cover"
                 />
                 <button
                   type="button"
-                  className="absolute inset-0 focus:outline-none"
+                  className="absolute inset-0"
                 >
                   <span className="sr-only">View details for {file.title}</span>
                 </button>
               </div>
-              <p className="mt-2 block text-sm font-mediumtruncate pointer-events-none">
+              <p className="mt-2 block text-sm font-medium text-center truncate">
                 {file.title}
               </p>
-              <p className="block text-sm font-medium pointer-events-none">
+              <p className="block text-center text-sm font-medium">
                 {file.caption}
               </p>
             </li>
           ))}
         </ul>
+      </div>
       </div>
     </>
   );

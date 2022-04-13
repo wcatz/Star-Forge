@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@harmonicpool/cardano-wallet-interface": "github:HarmonicPool/cardano-wallet-interface",
     "@headlessui/react": "^1.5.0",
     "@heroicons/react": "^1.0.6",
     "@testing-library/jest-dom": "^5.16.3",

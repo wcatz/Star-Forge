@@ -14,7 +14,7 @@ export function AboutPage() {
       <Topnav />
       <Menu />
       <svg
-        className="hidden lg:block absolute top-48 right-2 text-accent"
+        className="hidden xl:block absolute top-48 right-2 text-accent"
         width={404}
         height={384}
         fill="none"
@@ -47,7 +47,7 @@ export function AboutPage() {
         />
       </svg>
       <svg
-        className="hidden lg:block absolute -bottom-1/2 left-2"
+        className="hidden xl:block absolute -bottom-1/2 left-2"
         width={404}
         height={384}
         fill="none"
@@ -80,7 +80,7 @@ export function AboutPage() {
         />
       </svg>
       <svg
-        className="hidden lg:block absolute -bottom-full right-2 text-accent"
+        className="hidden xl:block absolute -bottom-full right-2 text-accent"
         width={404}
         height={384}
         fill="none"
@@ -126,7 +126,7 @@ export function AboutPage() {
                 rel="nofollow"
                 href="https://armada-alliance.com/identities/wcat-otg"
               >
-                {" "}
+
                 WCat (Wayne)
               </a>
               . I run a totally off the grid stakepool using solar panels,
@@ -173,7 +173,7 @@ export function AboutPage() {
             <p>
               The Turris Omnia is an amazing router with
               <a rel="nofollow" href="https://www.knot-dns.cz/">
-                {" "}
+
                 Knot Resolver
               </a>
               providing
@@ -181,7 +181,6 @@ export function AboutPage() {
                 rel="nofollow"
                 href="https://www.ionos.com/digitalguide/server/security/dns-over-tls"
               >
-                {" "}
                 DNS over TLS (DoT)
               </a>
               and
@@ -216,11 +215,11 @@ export function AboutPage() {
             </figure>
             <h2>⚡ Powerwall Specs (Deprecated)</h2>
             <p>
-              Originally I had built a Tesla style Powerwall with litthium ion
+              Originally I had built a Tesla style Powerwall with lithium ion
               cells reclaimed from old laptop batteries. it was capable of
               running 3 raspberry Pi's on two solar panels. The power
-              requirements for Starlink sealed the handmaid batteries fate. I
-              hope to use it soon with other projects
+              requirements for Starlink sealed the handmade batteries fate. I
+              hope to use it soon with another project.
             </p>
             <figure>
               <img
@@ -229,15 +228,15 @@ export function AboutPage() {
                 title="Homemade Powerwall"
                 alt="Lithium Ion Battery pack"
               />
-              <figcaption>3.8 Kwh capacity</figcaption>
+              <figcaption>3.8 kWh capacity</figcaption>
             </figure>
             <p>
               Building this battery took hundreds of hours and I do not
-              reccomend it. Each cell has to be obtained, taken apart and fully
+              recommend it. Each cell has to be obtained, taken apart and fully
               charged. Then discharged while measuring it's capacity and charged
               back up to a storage charge untill all the rest are processed.
               Then the banks need to be balanced, assembled and then soldered
-              with 5 amp fast blo glass fuses. The soldering itself took over 50
+              with 5 amp fast blow glass fuses on both sides. The soldering itself took over 50
               hours.
             </p>
           </div>

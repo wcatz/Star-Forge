@@ -12,7 +12,7 @@ export default function Newhero() {
   }, []);
   return (
     <div className="relative h-3/4">
-      <div className="nudge absolute bottom-0 z-10 left-1/2 transform -translate-x-1/2">
+      <div className="absolute bottom-0 z-10 left-1/2 transform -translate-x-1/2">
         <Hud />
       </div>
       <div
@@ -26,7 +26,7 @@ export default function Newhero() {
               heading=""
               messages={[
                 "Welcome user",
-                "Core is authenticated",
+                "Core authenticated",
                 "Validating transactions",
                 "All systems are nominal",
                 "Have a nice day.",

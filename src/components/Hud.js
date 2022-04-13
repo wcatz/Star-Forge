@@ -38,13 +38,10 @@ const Hud = () => {
             <dt className="text-sm font-medium truncate">Blocks</dt>
             <dd className="mt-1 text-3xl font-semibold 0">{totalBlocks}</dd>
             <div className="stat-desc text-green-400">
-              {res.blocks_epoch} This epoch
+              Current {res.blocks_epoch}
             </div>
           </div>
-          <div className="px-4 py-5 sm:p-6">
-            <dt className="text-sm font-medium truncate">Rank</dt>
-            <dd className="mt-1 text-3xl font-semibold 0">{res.rank}</dd>
-          </div>
+
           <div className="px-4 py-5 sm:p-6">
             <dt className="text-sm font-medium truncate">Pledge</dt>
             <dd className="mt-1 text-3xl font-semibold 0">
@@ -57,10 +54,7 @@ const Hud = () => {
               />
             </dd>
           </div>
-          <div className="px-4 py-5 sm:p-6">
-            <dt className="text-sm font-medium truncate">Delegators</dt>
-            <dd className="mt-1 text-3xl font-semibold 0">{res.delegators}</dd>
-          </div>
+
           <div className="px-4 py-5 sm:p-6">
             <dt className="text-sm font-medium truncate">Margin</dt>
             <dd className="mt-1 text-3xl font-semibold 0">
@@ -78,6 +72,14 @@ const Hud = () => {
                 suffix="%"
               />
             </dd>
+          </div>
+          <div className="px-4 py-5 sm:p-6">
+            <dt className="text-sm font-medium truncate">Delegators</dt>
+            <dd className="mt-1 text-3xl font-semibold 0">{res.delegators}</dd>
+          </div>
+          <div className="px-4 py-5 sm:p-6">
+            <dt className="text-sm font-medium truncate">Rank</dt>
+            <dd className="mt-1 text-3xl font-semibold 0">{res.rank}</dd>
           </div>
           <div className="px-4 py-5 sm:p-6">
             <dt className="text-sm font-medium truncate">Favor</dt>

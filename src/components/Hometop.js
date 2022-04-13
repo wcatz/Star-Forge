@@ -6,23 +6,25 @@ const Homemiddle = () => {
       <div className="relative py-2 sm:py-3 lg:py-4">
         <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
         <div className="hidden md:block">
-          <label tabIndex="0" className="mx-5 mt-5 btn btn-outline btn-success animate-pulse">
-            Pool Stats
-          </label>
+          <a rel="nofollow" href="https://vm.adaseal.eu/" tabIndex="0" className="mx-5 mt-5 btn btn-outline btn-success animate-pulse">
+            Vending Machine
+          </a>
           </div>
-          <h1 className="text-4xl mt-5 font-semibold tracking-wider text-primary-500 bg-gradient-to-r from-primary-400 via-primary-500 to-primary-700 text-gradient uppercase">
-            🌟 Star Forge ⚡
+          <h1 className="text-4xl mt-5 uppercase font-extrabold tracking-wider bg-clip-text">
+            🌟 <span className="mt-5 uppercase font-extrabold tracking-wider">Star Forge</span> ⚡
           </h1>
-          <p className="mt-2 text-2xl font-extrabold tracking-tight sm:text-4xl">
+          <p className="mt-2 font-semibold tracking-tight sm:text-3xl">
             Cardano Stake Pool
           </p>
           <p className="mt-5 max-w-prose mx-auto text-xl">
             The Star Forge was built to showcase just how efficient EVERYONES
             favorite blockchain is.
           </p>
+          <div className="inline-grid lg:grid-cols-3 sm:grid-cols-1 justify-center">
           <a rel="nofollow" href="https://pool.pm/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae" className="mx-5 mt-5 btn btn-ghost border-accent hover:border-accent">pool.pm</a>
           <a rel="nofollow" href="https://cardanoscan.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae" className="mx-5 mt-5 btn btn-ghost border-accent hover:border-accent">Cardanoscan</a>
           <a rel="nofollow" href="https://pooltool.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae" className="mx-5 mt-5 btn btn-ghost border-accent hover:border-accent">Pool Tool</a>
+        </div>
         </div>
       </div>
       <div className="relative max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">

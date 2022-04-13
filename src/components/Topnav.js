@@ -12,7 +12,7 @@ export default function topNav() {
             className="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
             aria-label="Global"
           >
-            <div className="flex items-center flex-1 visible lg:invisible">
+            <div className="flex items-center flex-1 visible xl:invisible">
               <div className="flex tems-center justify-between w-full md:w-auto">
                 <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-700 focus:outline-none">
                   <span className="sr-only">Open main menu</span>
@@ -83,12 +83,12 @@ export default function topNav() {
           >
             <Popover.Panel
               focus
-              className="menu absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+              className="menu absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:w-1/2 sm:w-3/4 xl:hidden"
             >
               <div className="rounded-lg shadow-md bg-secondary border-2 border-accent overflow-hidden">
                 <div className="px-5 pt-4 flex items-center justify-between">
                   <div className="-mr-2">
-                    <Popover.Button className="lg:block rounded-md p-2 inline-flex items-center justify-center text-base bg-gray-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                    <Popover.Button className="md:block rounded-md p-2 inline-flex items-center justify-center text-base bg-gray-600 focus:outline-none focus:ring-1 focus:ring-inset focus:outline-accent">
                       <span className="sr-only">Close menu</span>
                       <XIcon className="h-6 w-6" aria-hidden="true" />
                     </Popover.Button>

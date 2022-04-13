@@ -1,26 +1,26 @@
 import {
-  CloudUploadIcon,
+  CakeIcon,
   LockClosedIcon,
-  RefreshIcon,
+  LightningBoltIcon,
 } from "@heroicons/react/outline";
 
 const features = [
   {
     name: "Efficient",
     description:
-      "Apples Mac M1 Mini is next generation ARM processor provides unparalleled perfomance using 6 Watts each. The pool uses around 110 Watt making it the most efficient pool on the Cardano blockchain.",
-    icon: RefreshIcon,
+      "Apples Mac M1 Mini is a next generation ARM64 platform that provides unparalleled perfomance using 6 Watts each. The pool uses around 110 Watt making it the most efficient pool on the Cardano blockchain.",
+    icon: LightningBoltIcon,
   },
   {
     name: "Baremetal",
     description:
-      "Baremetal pools are Truly decentralized, the Cardano blockchain relies too heavily on service providers like Amazon AWS, Digital Ocean and others. These pools could be shut down without a moments notice.",
+      "Baremetal pools are truly decentralized, the Cardano blockchain relies too heavily on service providers like Amazon AWS, Digital Ocean and others. These pools could be shut down without a moments notice.",
     icon: LockClosedIcon,
   },
   {
-    name: "Sustainable",
-    description: "Starlink provides a mesh failover. The forge is usually connected to three satellites at any given time. With point to point coming soon we should achieve unparalleled propagation times around the globe.",
-    icon: CloudUploadIcon,
+    name: "Off The Grid",
+    description: "Solar powered with Starlink satellite mesh failover. The forge is usually connected to three satellites at any given time. With point to point coming soon we should achieve unparalleled propagation times around the globe.",
+    icon: CakeIcon,
   },
 ];
 

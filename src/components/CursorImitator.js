@@ -38,7 +38,6 @@ class Typer extends Component {
               typedText = messages[counter];
               text = typedText.slice(0, i++)
             }
-            
             this.setState({
               text2: text,
             })
@@ -55,11 +54,9 @@ class Typer extends Component {
   componentDidMount() {
     this.typing();
   }
-
   componentWillUnmount() {
     clearInterval(this.headTyping);
   }
-
   render() {
     return (
       <>
@@ -69,13 +66,11 @@ class Typer extends Component {
     );
   }
 }
-
 Typer.propTypes = {
   speed: PropTypes.number,
   heading: PropTypes.string,
   messages: PropTypes.arrayOf(PropTypes.string),
   infinite: PropTypes.bool
 }
-
 
 export default Typer;
