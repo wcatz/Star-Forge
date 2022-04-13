@@ -20,13 +20,13 @@ export default function Newhero() {
         style={{ backgroundImage: "url(../../stake-pool-hero.jpg)" }}
       >
         <Topnav />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-7xl">
-          <div className="flex justify-center text-center sm:max-w-md sm:w-full sm:mx-auto sm:rounded-lg sm:overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
+          <div className="flex text-center overflow-hidden">
             <Typer
               heading=""
               messages={[
                 "Welcome user",
-                "Core authenticated",
+                "The Core is authenticated",
                 "Validating transactions",
                 "All systems are nominal",
                 "Have a nice day.",

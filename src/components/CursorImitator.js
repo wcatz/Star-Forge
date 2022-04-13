@@ -15,7 +15,7 @@ class Typer extends Component {
     let messages = [];
     for (let i = 0; i < this.state.sentenceArr.length; i++) {
       i === 0 ? heading = this.state.sentenceArr[i] : messages.push(this.state.sentenceArr[i]);
-      
+
     }
 
     this.typing = (() => {
@@ -44,7 +44,9 @@ class Typer extends Component {
             if (text.length === typedText.length) {
               counter++
               i = 0
+              
             }
+            
           }, this.state.typingSpeed)
         }
       }, this.state.typingSpeed)
@@ -53,15 +55,17 @@ class Typer extends Component {
 
   componentDidMount() {
     this.typing();
+    
   }
   componentWillUnmount() {
     clearInterval(this.headTyping);
   }
   render() {
+
     return (
       <>
         <h1>{this.state.text1}</h1>
-        <p className="text-2xl"> {this.state.text2}</p>
+        <p className="w-full text-2xl"> {this.state.text2}</p>
       </>
     );
   }
