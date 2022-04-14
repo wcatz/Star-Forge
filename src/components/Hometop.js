@@ -5,13 +5,22 @@ const Homemiddle = () => {
     <div className="overflow-hidden">
       <div className="relative py-2 sm:py-3 lg:py-4">
         <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-        <div className="hidden md:block">
-          <a rel="nofollow" href="https://vm.adaseal.eu/" tabIndex="0" className="mx-5 mt-5 btn btn-outline btn-success animate-pulse">
-            Vending Machine
-          </a>
+          <div className="hidden md:block">
+            <a
+              rel="nofollow"
+              href="https://vm.adaseal.eu/"
+              tabIndex="0"
+              className="mx-5 mt-5 btn btn-outline btn-success animate-pulse"
+            >
+              Vending Machine
+            </a>
           </div>
           <h1 className="text-4xl mt-5 uppercase font-extrabold tracking-wider bg-clip-text">
-            🌟 <span className="mt-5 uppercase font-extrabold tracking-wider">Star Forge</span> ⚡
+            🌟{" "}
+            <span className="mt-5 uppercase font-extrabold tracking-wider">
+              Star Forge
+            </span>{" "}
+            ⚡
           </h1>
           <p className="mt-2 font-semibold tracking-tight sm:text-3xl">
             Cardano Stake Pool
@@ -21,10 +30,28 @@ const Homemiddle = () => {
             favorite blockchain is.
           </p>
           <div className="inline-grid lg:grid-cols-3 sm:grid-cols-1 justify-center">
-          <a rel="nofollow" href="https://pool.pm/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae" className="mx-5 mt-5 btn btn-ghost border-accent hover:border-accent">pool.pm</a>
-          <a rel="nofollow" href="https://cardanoscan.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae" className="mx-5 mt-5 btn btn-ghost border-accent hover:border-accent">Cardanoscan</a>
-          <a rel="nofollow" href="https://pooltool.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae" className="mx-5 mt-5 btn btn-ghost border-accent hover:border-accent">Pool Tool</a>
-        </div>
+            <a
+              rel="nofollow"
+              href="https://pool.pm/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
+              className="mx-5 mt-5 btn btn-ghost border-accent hover:border-accent"
+            >
+              pool.pm
+            </a>
+            <a
+              rel="nofollow"
+              href="https://cardanoscan.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
+              className="mx-5 mt-5 btn btn-ghost border-accent hover:border-accent"
+            >
+              Cardanoscan
+            </a>
+            <a
+              rel="nofollow"
+              href="https://pooltool.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
+              className="mx-5 mt-5 btn btn-ghost border-accent hover:border-accent"
+            >
+              Pool Tool
+            </a>
+          </div>
         </div>
       </div>
       <div className="relative max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
@@ -88,13 +115,13 @@ const Homemiddle = () => {
           <div className="mt-8 lg:mt-0">
             <div className="text-base max-w-prose mx-auto lg:max-w-none">
               <p className="text-lg">
-                The{" "}
+                The
                 <a
                   className="underline"
                   href="https://cardanoscan.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
                 >
                   Star Forge
-                </a>{" "}
+                </a>
                 is solar powered with 2 weeks of LiFePo4 battery storage and
                 connected to the internet through Starlink with a failover onto
                 cable internet provider.
@@ -113,8 +140,12 @@ const Homemiddle = () => {
                 <a href="https://testnet.cardanoscan.io/pool/62b968226866ba28af09bd9e6cb700df979aff5b51aedbd49ee90cb">
                   Star Forge testnet pool
                 </a>
-                , 3 <a href="https://www.freeloaderz.io/">Freeloaderz</a> submit
-                endpoints and of course my work with the{" "}
+                , 2 <a href="https://www.freeloaderz.io/">Freeloaderz</a> submit
+                endpoints,{" "}
+                <a className="underline" href="https://www.koios.rest/">
+                  Koios
+                </a>{" "}
+                and of course my work with the{" "}
                 <a href="https://armada-alliance.com/">Armada Alliance</a>.
               </p>
               <p>
@@ -132,8 +163,7 @@ const Homemiddle = () => {
                 <li>
                   <a href="https://www.turris.com/en/omnia/overview/">
                     Turris Omnia
-                  </a>{" "}
-                  open source router
+                  </a> open source router
                 </li>
                 <li>
                   <a href="https://www.starlink.com/">Starlink</a> internet

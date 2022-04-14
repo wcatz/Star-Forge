@@ -121,19 +121,21 @@ export function AboutPage() {
               </span>
             </h1>
             <p className="mt-8 text-xl leading-8">
-              Hello, my name is
+              Hello, my name is{" "}
               <a
                 rel="nofollow"
+                className="underline"
                 href="https://armada-alliance.com/identities/wcat-otg"
               >
-
                 WCat (Wayne)
               </a>
               . I run a totally off the grid stakepool using solar panels,
               LiFePo4 batteries Apple Silicon and Starlink. I am a founding
               member of the{" "}
-              <a href="https://armada-alliance.com">Armada Alliance</a> & spend
-              most of my time helping single stake pool operators run on
+              <a className="underline" href="https://armada-alliance.com">
+                Armada Alliance
+              </a>{" "}
+              & spend most of my time helping single stake pool operators run on
               efficient arm based computers.
             </p>
           </div>
@@ -145,6 +147,7 @@ export function AboutPage() {
             <ul>
               <li>
                 <a
+                  className="underline"
                   rel="nofollow"
                   href="https://www.ionos.com/digitalguide/server/security/dns-over-tls"
                 >
@@ -153,6 +156,7 @@ export function AboutPage() {
               </li>
               <li>
                 <a
+                  className="underline"
                   rel="nofollow"
                   href="https://www.ionos.com/digitalguide/server/know-how/dnssec-internet-standards-for-authenticated-name-resolution"
                 >
@@ -160,7 +164,11 @@ export function AboutPage() {
                 </a>
               </li>
               <li>
-                <a rel="nofollow" href="https://tools.ietf.org/html/bcp38">
+                <a
+                  className="underline"
+                  rel="nofollow"
+                  href="https://tools.ietf.org/html/bcp38"
+                >
                   Source Address Spoofing Protection (BCP38)
                 </a>
               </li>
@@ -171,24 +179,33 @@ export function AboutPage() {
             </p>
             <h2>🌟 Security & Privacy</h2>
             <p>
-              The Turris Omnia is an amazing router with
-              <a rel="nofollow" href="https://www.knot-dns.cz/">
-
-                Knot Resolver
-              </a>
-              providing
+              The Turris Omnia is an amazing router with{" "}
               <a
+                className="underline"
+                rel="nofollow"
+                href="https://www.knot-dns.cz/"
+              >
+                Knot Resolver
+              </a>{" "}
+              providing{" "}
+              <a
+                className="underline"
                 rel="nofollow"
                 href="https://www.ionos.com/digitalguide/server/security/dns-over-tls"
               >
                 DNS over TLS (DoT)
-              </a>
-              and
-              <a rel="nofollow" href="https://www.dnssec.net/">
+              </a>{" "}
+              and{" "}
+              <a
+                className="underline"
+                rel="nofollow"
+                href="https://www.dnssec.net/"
+              >
                 DNSSEC
-              </a>
+              </a>{" "}
               validating '
               <a
+                className="underline"
                 rel="nofollow"
                 href="https://dnssec-debugger.verisignlabs.com/adamantium.online"
               >
@@ -236,8 +253,8 @@ export function AboutPage() {
               charged. Then discharged while measuring it's capacity and charged
               back up to a storage charge untill all the rest are processed.
               Then the banks need to be balanced, assembled and then soldered
-              with 5 amp fast blow glass fuses on both sides. The soldering itself took over 50
-              hours.
+              with 5 amp fast blow glass fuses on both sides. The soldering
+              itself took over 50 hours.
             </p>
           </div>
         </div>

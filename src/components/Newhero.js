@@ -31,7 +31,7 @@ export default function Newhero() {
                 "All systems are nominal",
                 "Have a nice day.",
               ]}
-              speed={125}
+              speed={200}
               infinite={false}
             ></Typer>
           </div>
