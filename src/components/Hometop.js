@@ -25,9 +25,13 @@ const Homemiddle = () => {
           <p className="mt-2 font-semibold tracking-tight sm:text-3xl">
             Cardano Stake Pool
           </p>
+
           <p className="mt-5 max-w-prose mx-auto text-xl">
             The Star Forge was built to showcase just how efficient EVERYONES
             favorite blockchain is.
+          </p>
+          <p className="mt-2 font-semibold tracking-tight sm:text-3xl">
+            Ticker = OTG
           </p>
           <div className="inline-grid lg:grid-cols-3 sm:grid-cols-1 justify-center">
             <a
@@ -163,7 +167,8 @@ const Homemiddle = () => {
                 <li>
                   <a href="https://www.turris.com/en/omnia/overview/">
                     Turris Omnia
-                  </a> open source router
+                  </a>{" "}
+                  open source router
                 </li>
                 <li>
                   <a href="https://www.starlink.com/">Starlink</a> internet
