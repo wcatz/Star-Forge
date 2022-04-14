@@ -10,7 +10,7 @@ const Hometop = () => {
               rel="nofollow"
               href="https://vm.adaseal.eu/"
               tabIndex="0"
-              className="mx-5 mt-5 btn btn-outline btn-success animate-pulse"
+              className="mx-5 mt-5 btn btn-outline btn-success animate-[pulse_1s_ease-in-out_infinite]"
             >
               Vending Machine
             </a>

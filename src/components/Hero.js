@@ -26,7 +26,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <span className="nowrap relative inset-x-1/2 animate-[ping_1s_ease-in-out_infinite] block h-3 w-1 m-5 rounded-full ring-2 ring-green-400 bg-green-600"></span>
     </div>
   );
 };
