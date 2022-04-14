@@ -21,17 +21,17 @@ export default function Newhero() {
       >
         <Topnav />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
-          <div className="flex text-center overflow-hidden">
+          <div className="flex transform translate-x-1/2 -ml-44 overflow-hidden">
             <Typer
               heading=""
               messages={[
                 "Welcome user",
-                "The Core is authenticated",
-                "Validating transactions",
+                "Core authenticated",
+                "& validating transactions",
                 "All systems are nominal",
                 "Have a nice day.",
               ]}
-              speed={200}
+              speed={175}
               infinite={false}
             ></Typer>
           </div>

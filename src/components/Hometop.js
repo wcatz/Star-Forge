@@ -1,6 +1,6 @@
 import Cover from "../pages/About/images/better-img.png";
 
-const Homemiddle = () => {
+const Hometop = () => {
   return (
     <div className="overflow-hidden">
       <div className="relative py-2 sm:py-3 lg:py-4">
@@ -39,7 +39,7 @@ const Homemiddle = () => {
               href="https://pool.pm/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
               className="mx-5 mt-5 btn btn-ghost border-accent hover:border-accent"
             >
-              pool.pm
+              pool pm
             </a>
             <a
               rel="nofollow"
@@ -119,14 +119,12 @@ const Homemiddle = () => {
           <div className="mt-8 lg:mt-0">
             <div className="text-base max-w-prose mx-auto lg:max-w-none">
               <p className="text-lg">
-                The
-                <a
+                The <a
                   className="underline"
                   href="https://cardanoscan.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
                 >
                   Star Forge
-                </a>
-                is solar powered with 2 weeks of LiFePo4 battery storage and
+                </a> is solar powered with 2 weeks of LiFePo4 battery storage and
                 connected to the internet through Starlink with a failover onto
                 cable internet provider.
               </p>
@@ -195,4 +193,4 @@ const Homemiddle = () => {
   );
 };
 
-export default Homemiddle;
+export default Hometop;
