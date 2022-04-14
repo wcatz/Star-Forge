@@ -14,7 +14,7 @@ const Hero = () => {
                   heading=""
                   messages={[
                     "Welcome user...",
-                    " the Forge is validating transactions",
+                    "The Forge is validating transactions",
                     "All systems are nominal.",
                     "Have a nice day.",
                   ]}
