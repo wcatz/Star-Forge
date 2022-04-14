@@ -27,7 +27,7 @@ export default function Newhero() {
               messages={[
                 "Welcome user",
                 "Core authenticated",
-                "& validating transactions",
+                "with Ouroboros",
                 "All systems are nominal",
                 "Have a nice day.",
               ]}
