@@ -139,7 +139,7 @@ const Hometop = () => {
               </p>
               <p>
                 There is a{" "}
-                <a href="https://testnet.cardanoscan.io/pool/62b968226866ba28af09bd9e6cb700df979aff5b51aedbd49ee90cb">
+                <a href="https://testnet.cardanoscan.io/pool/62b968226866ba28af09bd9e6cb700df979aff5b51aedbd49ee90cb6">
                   Star Forge testnet pool
                 </a>
                 , 2 <a href="https://www.freeloaderz.io/">Freeloaderz</a> submit
