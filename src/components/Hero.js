@@ -15,7 +15,7 @@ const Hero = () => {
                   messages={[
                     "Welcome user...",
                     "The Forge is validating transactions",
-                    "All systems are nominal.",
+                    "All systems nominal.",
                     "Have a nice day.",
                   ]}
                   speed={125}
