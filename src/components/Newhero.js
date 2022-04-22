@@ -28,7 +28,7 @@ export default function Newhero() {
                 "Welcome user",
                 "Core authenticated",
                 "with Ouroboros",
-                "All systems are nominal",
+                "All systems nominal",
                 "Have a nice day.",
               ]}
               speed={175}
