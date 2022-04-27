@@ -10,7 +10,7 @@ const Hometop = () => {
               rel="nofollow"
               href="https://vm.adaseal.eu/"
               tabIndex="0"
-              className="mx-5 mt-5 btn btn-outline btn-success animate-[pulse_1s_ease-in-out_infinite]"
+              className="mx-5 mt-5 btn btn-outline btn-success animate-pulse"
             >
               Vending Machine
             </a>
@@ -119,24 +119,20 @@ const Hometop = () => {
           <div className="mt-8 lg:mt-0">
             <div className="text-base max-w-prose mx-auto lg:max-w-none">
               <p className="text-lg">
-                The <a
+                The{" "}
+                <a
                   className="underline"
                   href="https://cardanoscan.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
                 >
                   Star Forge
-                </a> is solar powered with 2 weeks of LiFePo4 battery storage and
+                </a>{" "}
+                is solar powered with 2 weeks of LiFePo4 battery storage and
                 connected to the internet through Starlink with a failover onto
-                cable internet provider.
+                cable internet provider. The pool consumes just 110 watts of
+                power.
               </p>
             </div>
             <div className="mt-5 prose prose-indigo mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
-              <p>
-                Proud sponsor of <a href="https://espiga.org">espiga.org</a>{" "}
-                thanks to the{" "}
-                <a href="https://white.topopool.com/">White project</a> and{" "}
-                <a href="https://twitter.com/CriptogirlB">(@CriptogirlB)</a> for
-                the opportunity.
-              </p>
               <p>
                 There is a{" "}
                 <a href="https://testnet.cardanoscan.io/pool/62b968226866ba28af09bd9e6cb700df979aff5b51aedbd49ee90cb6">
@@ -151,9 +147,16 @@ const Hometop = () => {
                 <a href="https://armada-alliance.com/">Armada Alliance</a>.
               </p>
               <p>
+                Proud sponsor of <a href="https://espiga.org">espiga.org</a>{" "}
+                thanks to the{" "}
+                <a href="https://white.topopool.com/">White project</a> and{" "}
+                <a href="https://twitter.com/CriptogirlB">(@CriptogirlB)</a> for
+                the opportunity.
+              </p>
+              <p>
                 I provide support to other Stake Pool operators, writing guides
-                and providing a flashable image to quickly spin up and sync a
-                node within an hour on a Raspberry Pi.
+                and providing a flashable image to quickly spin up and <a href="https://docs.armada-alliance.com/learn/stake-pool-guides/pi-pool-tutorial/pi-node-full-guide">sync a
+                node within an hour on a Raspberry Pi.</a>
               </p>
               <ul className="">
                 <li>

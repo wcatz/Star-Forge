@@ -17,8 +17,8 @@ const images = importAll(
 
 const files = [
   {
-    title: "Star Forge ",
-    caption: "Next generation ARM64 Stake Pool",
+    title: "Star Forge",
+    caption: "Next generation ARM64 Cardano Stake Pool",
     source: images["m1-star-forge.jpg"],
   },
   {
