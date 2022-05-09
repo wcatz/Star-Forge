@@ -1,10 +1,12 @@
 import Cover from "../pages/About/images/better-img.png";
+import { ReactComponent as Logo } from "../pages/Gallery/images/Star-Forge-Logo-06.svg";
 
 const Hometop = () => {
   return (
     <div className="overflow-hidden">
       <div className="relative py-2 sm:py-3 lg:py-4">
         <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+
           <div className="hidden md:block">
             <a
               rel="nofollow"
@@ -33,6 +35,9 @@ const Hometop = () => {
           <p className="mt-2 font-semibold tracking-tight sm:text-3xl">
             Ticker = OTG
           </p>
+                    <div className="flex items-center justify-center">
+            <Logo className="h-24" />
+          </div>
           <div className="inline-grid lg:grid-cols-3 sm:grid-cols-1 justify-center">
             <a
               rel="nofollow"
@@ -155,8 +160,10 @@ const Hometop = () => {
               </p>
               <p>
                 I provide support to other Stake Pool operators, writing guides
-                and providing a flashable image to quickly spin up and <a href="https://docs.armada-alliance.com/learn/stake-pool-guides/pi-pool-tutorial/pi-node-full-guide">sync a
-                node within an hour on a Raspberry Pi.</a>
+                and providing a flashable image to quickly spin up and{" "}
+                <a href="https://docs.armada-alliance.com/learn/stake-pool-guides/pi-pool-tutorial/pi-node-full-guide">
+                  sync a node within an hour on a Raspberry Pi.
+                </a>
               </p>
               <ul className="">
                 <li>
