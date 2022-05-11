@@ -25,8 +25,8 @@ export default function Newhero() {
             <Typer
               heading=""
               messages={[
-                "Welcome user",
-                "Core authenticated",
+                "Welcome traveler",
+                "Forge authenticated",
                 "with Ouroboros",
                 "All systems nominal",
                 "Have a nice day.",
