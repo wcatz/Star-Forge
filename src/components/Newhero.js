@@ -4,8 +4,6 @@ import { themeChange } from "theme-change";
 import Hud from "./Hud";
 import Topnav from "./Topnav";
 
-//import { ChevronRightIcon } from "@heroicons/react/solid";
-
 export default function Newhero() {
   useEffect(() => {
     themeChange(false);
@@ -25,10 +23,10 @@ export default function Newhero() {
             <Typer
               heading=""
               messages={[
-                "Welcome traveler",
+                "Welcome traveler.",
                 "Forge authenticated",
-                "with Ouroboros",
-                "All systems nominal",
+                "with Ouroboros.",
+                "All systems nominal.",
                 "Have a nice day.",
               ]}
               speed={175}
