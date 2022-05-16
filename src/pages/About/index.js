@@ -4,6 +4,7 @@ import { themeChange } from "theme-change";
 import Menu from "../../components/Menu";
 import M3 from "./images/m3-star-forge.jpg";
 import CP from "./images/completed-packs.jpg";
+import Stake from "../../components/DelegateNami";
 
 export function AboutPage() {
   useEffect(() => {
@@ -140,6 +141,7 @@ export function AboutPage() {
             </p>
           </div>
           <div className="mt-6 prose prose-indigo prose-lg mx-auto">
+          <Stake />
             <p>
               Learn how to run cardano-node on a Raspberry Pi 4 & interact with
               the blockchain or build a stake pool.

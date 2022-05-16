@@ -1,4 +1,11 @@
-.starscreen {
-  height: 75vh;
-}
 
+[data-theme="luxury"] .starscreen {
+  height: 75vh;
+  background-image: url("./stake-pool-hero.jpg");
+  
+}
+[data-theme="otg"] .starscreen {
+  height: 75vh;
+  background-image: url("./stake-pool-hero.jpg");
+  
+}

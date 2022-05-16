@@ -1,67 +1,72 @@
 import Cover from "../pages/About/images/better-img.png";
 import { ReactComponent as Logo } from "../pages/Gallery/images/Star-Forge-Logo-06.svg";
-import HandleDelegate from "./Delegateiframe";
+import Stake from "./DelegateNami";
 
 const Hometop = () => {
   return (
     <div className="overflow-hidden">
       <div className="relative py-2 sm:py-3 lg:py-4">
         <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-          <div className="hidden md:block">
-            <HandleDelegate />
-            <a
-              rel="nofollow"
-              href="https://vm.adaseal.eu/"
-              tabIndex="0"
-              className="mx-5 mt-5 btn btn-outline btn-success animate-pulse"
-            >
-              Vending Machine
-            </a>
-          </div>
+          <div className="hidden md:block"></div>
+
           <h1 className="text-4xl mt-5 uppercase font-extrabold tracking-wider bg-clip-text">
             🌟{" "}
-            <span className="mt-5 uppercase font-extrabold tracking-wider">
+            <span className="mt-5 uppercase font-extrabold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-500 text-5xl">
               Star Forge
             </span>{" "}
             ⚡
           </h1>
+          <div className="flex items-center justify-center">
+            <Logo className="m-5 h-24" />
+          </div>
+
           <p className="mt-2 font-semibold tracking-tight sm:text-3xl">
             Cardano Stake Pool
           </p>
-
-          <p className="mt-5 max-w-prose mx-auto text-xl">
-            The Star Forge was built to showcase just how efficient EVERYONES
-            favorite blockchain is.
-          </p>
-          <p className="m-2 font-semibold tracking-tight sm:text-3xl">
-            Ticker = OTG
-          </p>
-          <div className="flex items-center justify-center">
-            <Logo className="h-24" />
-          </div>
-          <div className="inline-grid lg:grid-cols-3 sm:grid-cols-1 justify-center">
+          <span className="relative m-5 z-0 inline-flex shadow-sm rounded-md">
+            <Stake />
             <a
               rel="nofollow"
-              href="https://pool.pm/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
-              className="mx-5 mt-5 btn btn-ghost border-accent hover:border-accent"
+              href="https://vm.adaseal.eu/"
+              tabIndex="0"
+              type="button"
+              className="-ml-px relative inline-flex items-center px-4 py-2 border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
             >
-              pool pm
+              Tosidrop
+            </a>
+            <a
+              rel="nofollow"
+              type="button"
+              href="https://pool.pm/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
+              className="-ml-px relative inline-flex items-center px-4 py-2 border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
+            >
+              Pool PM
             </a>
             <a
               rel="nofollow"
               href="https://cardanoscan.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
-              className="mx-5 mt-5 btn btn-ghost border-accent hover:border-accent"
+              type="button"
+              className="-ml-px relative inline-flex items-center px-4 py-2 border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
             >
               Cardanoscan
             </a>
             <a
               rel="nofollow"
               href="https://pooltool.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
-              className="mx-5 mt-5 btn btn-ghost border-accent hover:border-accent"
+              type="button"
+              className="-ml-px relative inline-flex items-center px-4 py-2 border rounded-r-md bordertext-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
             >
               Pool Tool
             </a>
-          </div>
+          </span>
+
+          <p className="mt-5 max-w-prose mx-auto text-xl">
+            The Star Forge was built to showcase just how efficient the Cardano
+            blockchain can be.
+          </p>
+          <p className="m-2 font-semibold tracking-tight sm:text-3xl">
+            Ticker = OTG
+          </p>
         </div>
       </div>
       <div className="relative max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">

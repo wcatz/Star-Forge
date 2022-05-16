@@ -15,7 +15,7 @@ export default function Newhero() {
       </div>
       <div
         className="bg-cover bg-center relative starscreen overflow-hidden rounded-b-[100px] md:rounded-b-[200px] border-b-4 border-accent"
-        style={{ backgroundImage: "url(../../stake-pool-hero.jpg)" }}
+        
       >
         <Topnav />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
@@ -33,6 +33,7 @@ export default function Newhero() {
               infinite={false}
             ></Typer>
           </div>
+
         </div>
       </div>
     </div>

@@ -1,6 +1,8 @@
+import React from 'react';
+
 function HandleDelegate() {
   var pool_id = "c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae";
-  var blockfrost_project_id = "5KZZo60WRq8nMsRWNvrvPqyrHtqucJlM";
+  var blockfrost_project_id = "mainnet5KZZo60WRq8nMsRWNvrvPqyrHtqucJlM";
   var link =
     "https://armada-alliance.com/delegation-widget?pool_id=" +
     pool_id +
@@ -23,14 +25,14 @@ function HandleDelegate() {
       top
   );
   return (
-    <button
-      className="mx-5 mt-5 btn btn-outline btn-info"
-      type="button"
-      onClick={HandleDelegate}
-    >
-      Delegate with Nami
+    <button onClick={() => HandleDelegate()}
+      className="relative inline-flex items-center px-4 py-2 rounded-l-md border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
+      type="button">
+      Delegate
     </button>
   );
 }
 
 export default HandleDelegate;
+
+

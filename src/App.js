@@ -1,20 +1,22 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import Footer from "./components/Footer";
 import { HomePage } from "./pages/Home";
 import { AboutPage } from "./pages/About";
 import { GalleryPage } from "./pages/Gallery";
 
 
-const App = () => (
-  <BrowserRouter>
-    <Switch>
-      <Route path="/" exact component={HomePage} />
-      <Route path="/gallery" exact component={GalleryPage} />
-      <Route path="/about" exact component={AboutPage} />
-    </Switch>
-    <Footer />
-  </BrowserRouter>
-);
 
-export default App;
+export default function App() {
+  return (
+    <>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/gallery" element={<GalleryPage />} />
+      <Route path="/about" element={<AboutPage />} />
+    </Routes>
+    <Footer />
+    </>
+  );
+}
