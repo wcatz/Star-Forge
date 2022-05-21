@@ -1,6 +1,7 @@
 import Cover from "../pages/About/images/better-img.png";
 import { ReactComponent as Logo } from "../pages/Gallery/images/Star-Forge-Logo-06.svg";
 import Stake from "./DelegateNami";
+//import { Tip } from "./koios-comps/Epoch";
 
 const Hometop = () => {
   return (
@@ -11,42 +12,42 @@ const Hometop = () => {
 
           <h1 className="text-4xl mt-5 uppercase font-extrabold tracking-wider bg-clip-text">
             🌟{" "}
-            <span className="mt-5 uppercase font-extrabold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-500 text-5xl">
-              Star Forge
+            <span className="mt-5 uppercase font-extrabold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-teal-500 text-3xl lg:text-5xl">
+              Star Forge 
             </span>{" "}
             ⚡
           </h1>
           <div className="flex items-center justify-center">
-            <Logo className="m-5 h-24" />
+            <Logo className="m-4 h-28" />
           </div>
 
-          <p className="mt-2 font-semibold tracking-tight sm:text-3xl">
+          <p className="mt-2 font-semibold tracking-tight text-3xl">
             Cardano Stake Pool
           </p>
-          <span className="relative m-5 z-0 inline-flex shadow-sm rounded-md">
+          <span className="inline-grid gap-4 md:gap-0 md:grid-cols-5 grid-cols-2 justify-center relative m-5 z-0">
             <Stake />
             <a
               rel="nofollow"
-              href="https://vm.adaseal.eu/"
+              href="https://tosidrop.io/"
               tabIndex="0"
               type="button"
-              className="-ml-px relative inline-flex items-center px-4 py-2 border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
+              className="-ml-px relative justify-center items-center px-4 py-2 rounded-md md:rounded-none border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
             >
-              Tosidrop
+              Tosidrop ☔
             </a>
             <a
               rel="nofollow"
               type="button"
               href="https://pool.pm/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
-              className="-ml-px relative inline-flex items-center px-4 py-2 border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
+              className="-ml-px relative justify-center items-center px-4 py-2 rounded-md md:rounded-none border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
             >
-              Pool PM
+              PoolPM
             </a>
             <a
               rel="nofollow"
               href="https://cardanoscan.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
               type="button"
-              className="-ml-px relative inline-flex items-center px-4 py-2 border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
+              className="-ml-px relative inline-flex justify-center items-center px-4 py-2 rounded-md md:rounded-none border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
             >
               Cardanoscan
             </a>
@@ -54,9 +55,9 @@ const Hometop = () => {
               rel="nofollow"
               href="https://pooltool.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
               type="button"
-              className="-ml-px relative inline-flex items-center px-4 py-2 border rounded-r-md bordertext-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
+              className="-ml-px relative justify-center items-center px-4 py-2 rounded-md md:rounded-none border md:rounded-r-md text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
             >
-              Pool Tool
+              PoolTool
             </a>
           </span>
 
@@ -157,13 +158,7 @@ const Hometop = () => {
                 and of course my work with the{" "}
                 <a href="https://armada-alliance.com/">Armada Alliance</a>.
               </p>
-              <p>
-                Proud sponsor of <a href="https://espiga.org">espiga.org</a>{" "}
-                thanks to the{" "}
-                <a href="https://white.topopool.com/">White project</a> and{" "}
-                <a href="https://twitter.com/CriptogirlB">(@CriptogirlB)</a> for
-                the opportunity.
-              </p>
+              
               <p>
                 I provide support to other Stake Pool operators, writing guides
                 and providing a flashable image to quickly spin up and{" "}

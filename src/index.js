@@ -2,16 +2,24 @@ import * as React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
-
+import { SWRConfig } from "swr";
+import App from "./App";
 //import Footer from "./components/Footer";
 import "./index.css";
-import App from "./App";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
+
+
 
 root.render(
+
+  <SWRConfig value={{ revalidateOnFocus: false, fetcher,  suspense: true  }}>
   <BrowserRouter>
     <App />
   </BrowserRouter>
+  </SWRConfig>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,8 +1,11 @@
+import * as React from "react";
 import Typer from "./CursorImitator";
 import { useEffect } from "react";
 import { themeChange } from "theme-change";
-import Hud from "./Hud";
+import { Suspense } from "react";
 import Topnav from "./Topnav";
+
+const Hud = React.lazy(() => import("./Hud"));
 
 export default function Newhero() {
   useEffect(() => {
@@ -11,11 +14,27 @@ export default function Newhero() {
   return (
     <div className="relative h-3/4">
       <div className="absolute bottom-0 z-10 left-1/2 transform -translate-x-1/2">
-        <Hud />
+        <Suspense
+          fallback={
+            <div className="flex justify-center items-center mb-10">
+              <div
+                className="
+              animate-spin
+              rounded-full
+              h-10
+              w-10
+              border-t-2 border-b-2 border-indigo-500
+              "
+              ></div>
+            </div>
+          }
+        >
+          <Hud />
+        </Suspense>
       </div>
       <div
         className="bg-cover bg-center relative starscreen overflow-hidden rounded-b-[100px] md:rounded-b-[200px] border-b-4 border-accent"
-        
+        style={{ backgroundImage: "url(../../stake-pool-hero.jpg)" }}
       >
         <Topnav />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
@@ -33,7 +52,6 @@ export default function Newhero() {
               infinite={false}
             ></Typer>
           </div>
-
         </div>
       </div>
     </div>

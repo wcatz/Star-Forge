@@ -26,7 +26,7 @@ const Navbar = () => {
               <label className="swap swap-rotate">
                 <input
                   type="checkbox"
-                  data-toggle-theme="luxury,garden"
+                  data-toggle-theme="luxury,otg"
                   data-act-class="ACTIVECLASS"
                 />
                 <svg
@@ -54,7 +54,7 @@ const Navbar = () => {
           <label className="swap swap-rotate">
             <input
               type="checkbox"
-              data-toggle-theme="luxury,aqua"
+              data-toggle-theme="luxury,otg"
               data-act-class="ACTIVECLASS"
             />
             <svg

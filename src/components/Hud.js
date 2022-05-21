@@ -1,16 +1,27 @@
-//import { Link } from "react-router-dom";
-import React from "react";
 import useSWR from "swr";
+//import { Suspense } from 'react'
+
 import NumberFormat from "react-number-format";
 
-const baseURL =
-  "https://js.adapools.org/pools/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae/summary.json";
-
-const fetcher = (...args) => fetch(...args).then((res) => res.json());
+let url =
+  "https://cors.adamantium.online/https://api.koios.rest/api/v0/pool_info";
 
 const Hud = () => {
-  const { data: result, error } = useSWR(baseURL, fetcher);
-  if (error) return <h1>Something went wrong!</h1>;
+  const fetcher = (...args) =>
+    fetch(url, {
+      method: "post",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        _pool_bech32_ids: [
+          "pool1eqj3dzpkcklc2r0v8pt8adrhrshq8m4zsev072ga7a52uj5wv5c",
+        ],
+      }),
+    }).then((res) => res.json());
+
+  const { data: result } = useSWR(url, fetcher, { suspense: true });
   if (!result)
     return (
       <div className="flex justify-center items-center mb-10">
@@ -25,20 +36,19 @@ const Hud = () => {
         ></div>
       </div>
     );
-  let res = result.data;
-  console.log(result.data);
 
-  const totalBlocks = Number(res.blocks_lifetime) + Number(res.blocks_epoch);
+  //console.log(result);
+  let res = result;
 
   return (
+    
     <div className="hidden lg:block">
       <div className="flex justify-center text-center">
         <dl className="flex flex-cols-1 gap-2 sm:flex-cols-7 bg-secondary bg-opacity-50 mb-1 border-t-2 border-l-2 border-r-2 border-accent rounded-t-lg">
           <div className="px-4 py-5 sm:p-6">
             <dt className="text-sm font-medium truncate">Blocks</dt>
-            <dd className="mt-1 text-3xl font-semibold 0">{totalBlocks}</dd>
+            <dd className="mt-1 text-3xl font-semibold 0">{res[0].block_count}</dd>
             <div className="stat-desc text-green-400">
-              Current {res.blocks_epoch}
             </div>
           </div>
 
@@ -46,10 +56,10 @@ const Hud = () => {
             <dt className="text-sm font-medium truncate">Pledge</dt>
             <dd className="mt-1 text-3xl font-semibold 0">
               <NumberFormat
-                value={res.pledge / 1000000000}
+                value={res[0].live_pledge / 1000000000}
                 displayType={"text"}
                 thousandSeparator={true}
-                decimalScale={2}
+                decimalScale={0}
                 suffix="K"
               />
             </dd>
@@ -58,35 +68,30 @@ const Hud = () => {
           <div className="px-4 py-5 sm:p-6">
             <dt className="text-sm font-medium truncate">Margin</dt>
             <dd className="mt-1 text-3xl font-semibold 0">
-              {res.tax_ratio * 100}%
+              {res[0].margin * 100}%
             </dd>
           </div>
           <div className="px-4 py-5 sm:p-6">
-            <dt className="text-sm font-medium truncate">RO₳</dt>
+            <dt className="text-sm font-medium truncate">Stake</dt>
             <dd className="mt-1 text-3xl font-semibold 0">
               <NumberFormat
-                value={res.roa_lifetime}
+                value={res[0].live_stake / 1000000000000}
                 displayType={"text"}
                 thousandSeparator={true}
                 decimalScale={2}
-                suffix="%"
+                suffix="M"
               />
             </dd>
           </div>
           <div className="px-4 py-5 sm:p-6">
             <dt className="text-sm font-medium truncate">Delegators</dt>
-            <dd className="mt-1 text-3xl font-semibold 0">{res.delegators}</dd>
+            <dd className="mt-1 text-3xl font-semibold 0">{res[0].live_delegators}</dd>
           </div>
           <div className="px-4 py-5 sm:p-6">
-            <dt className="text-sm font-medium truncate">Rank</dt>
-            <dd className="mt-1 text-3xl font-semibold 0">{res.rank}</dd>
+            <dt className="text-sm font-medium truncate">Saturation</dt>
+            <dd className="mt-1 text-3xl font-semibold 0">{res[0].live_saturation}%</dd>
           </div>
-          <div className="px-4 py-5 sm:p-6">
-            <dt className="text-sm font-medium truncate">Favor</dt>
-            <dd className="mt-1 text-3xl font-semibold 0">
-              {res.luck_lifetime}%
-            </dd>
-          </div>
+
         </dl>
       </div>
     </div>

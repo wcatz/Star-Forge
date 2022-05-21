@@ -11,7 +11,7 @@ const Drawer = () => {
   if (error) return <h1>Something went wrong!</h1>
   if (!result) return <h1>Loading...</h1>
   let res = result.data
-  console.log(result.data);
+  console.log(res);
 
   const totalBlocks = Number(res.blocks_lifetime) + Number(res.blocks_epoch);
 

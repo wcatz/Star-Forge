@@ -1,14 +1,15 @@
 import { NavLink } from "react-router-dom";
 import { HomeIcon, PhotographIcon, ChipIcon } from "@heroicons/react/outline";
 
+
+
 const Menulist = () => {
   return (
     <>
       <li>
         <NavLink
           to={"/"}
-          activeclassname="bordered"
-          className="hover-bordered"
+          className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")}
         >
           <HomeIcon className="h-5 w-5" />
           Home
@@ -17,8 +18,7 @@ const Menulist = () => {
       <li>
         <NavLink
           to={"/gallery"}
-          activeclassname="bordered"
-          className="hover-bordered"
+          className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")}
         >
           <PhotographIcon className="h-5 w-5" />
           Gallery
@@ -27,8 +27,7 @@ const Menulist = () => {
       <li>
         <NavLink
           to={"/about"}
-          activeclassname="bordered"
-          className="hover-bordered"
+          className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")}
         >
           <ChipIcon className="h-5 w-5" />
           About
