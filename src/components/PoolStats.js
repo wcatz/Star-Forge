@@ -22,7 +22,7 @@ const PoolStats = () => {
           <thead className="">
             <tr>
               <th className="hidden"></th>
-              <th>Epoch</th>
+              <th>EPOCH</th>
               <th>ACTIVE STAKE</th>
               <th>BLOCKS</th>
               <th>DELEGATE PAYOUT</th>

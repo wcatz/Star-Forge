@@ -3,7 +3,6 @@ import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Menulist from "./Menulist";
 
-
 const topNav = () => {
   return (
     <Popover>
@@ -99,5 +98,5 @@ const topNav = () => {
       </Transition>
     </Popover>
   );
-}
+};
 export default topNav;

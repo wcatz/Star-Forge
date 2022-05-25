@@ -1,8 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { HomeIcon, PhotographIcon, ChipIcon } from "@heroicons/react/outline";
 
-
-
 const Menulist = () => {
   return (
     <>

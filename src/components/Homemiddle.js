@@ -1,13 +1,7 @@
 //import  from "./PoolStats";
 import * as React from "react";
 import { Suspense } from "react";
-
-import {
-  CakeIcon,
-  LockClosedIcon,
-  LightningBoltIcon,
-} from "@heroicons/react/outline";
-
+import { CakeIcon, LockClosedIcon, LightningBoltIcon } from "@heroicons/react/outline";
 const PoolStats = React.lazy(() => import("./PoolStats"));
 
 const features = [

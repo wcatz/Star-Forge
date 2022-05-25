@@ -1,7 +1,6 @@
 import Cover from "../pages/About/images/better-img.png";
 import { ReactComponent as Logo } from "../pages/Gallery/images/Star-Forge-Logo-06.svg";
 import Stake from "./DelegateNami";
-//import { Tip } from "./koios-comps/Epoch";
 
 const Hometop = () => {
   return (
@@ -59,7 +58,7 @@ const Hometop = () => {
             >
               PoolTool
             </a>
-                        <a
+            <a
               rel="nofollow"
               href="https://adastat.net/pools/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
               type="button"
