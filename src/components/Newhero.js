@@ -1,16 +1,11 @@
 import * as React from "react";
 import Typer from "./CursorImitator";
-import { useEffect } from "react";
-import { themeChange } from "theme-change";
 import { Suspense } from "react";
 import Topnav from "./Topnav";
 
 const Hud = React.lazy(() => import("./Hud"));
 
-export default function Newhero() {
-  useEffect(() => {
-    themeChange(false);
-  }, []);
+const Newhero = () => {
   return (
     <div className="relative h-3/4">
       <div className="absolute bottom-0 z-10 left-1/2 transform -translate-x-1/2">
@@ -56,4 +51,5 @@ export default function Newhero() {
       </div>
     </div>
   );
-}
+};
+export default Newhero;

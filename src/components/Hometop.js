@@ -10,10 +10,10 @@ const Hometop = () => {
         <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
           <div className="hidden md:block"></div>
 
-          <h1 className="text-4xl mt-5 uppercase font-extrabold tracking-wider bg-clip-text">
+          <h1 className="text-4xl mt-5 uppercase font-extrabold tracking-wider bg-clip-text lg:text-5xl">
             🌟{" "}
-            <span className="mt-5 uppercase font-extrabold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-teal-500 text-3xl lg:text-5xl">
-              Star Forge 
+            <span className="mt-5 uppercase font-extrabold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-teal-500 text-4xl lg:text-5xl">
+              Star Forge
             </span>{" "}
             ⚡
           </h1>
@@ -21,10 +21,10 @@ const Hometop = () => {
             <Logo className="m-4 h-28" />
           </div>
 
-          <p className="mt-2 font-semibold tracking-tight text-3xl">
+          <p className="mt-2 font-semibold tracking-wider text-3xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-teal-500 lg:text-4xl">
             Cardano Stake Pool
           </p>
-          <span className="inline-grid gap-4 md:gap-0 md:grid-cols-5 grid-cols-2 justify-center relative m-5 z-0">
+          <span className="inline-grid gap-4 md:gap-0 md:grid-cols-6 grid-cols-2 justify-center relative m-5 z-0">
             <Stake />
             <a
               rel="nofollow"
@@ -47,7 +47,7 @@ const Hometop = () => {
               rel="nofollow"
               href="https://cardanoscan.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
               type="button"
-              className="-ml-px relative inline-flex justify-center items-center px-4 py-2 rounded-md md:rounded-none border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
+              className="-ml-px relative justify-center items-center px-4 py-2 rounded-md md:rounded-none border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
             >
               Cardanoscan
             </a>
@@ -55,9 +55,17 @@ const Hometop = () => {
               rel="nofollow"
               href="https://pooltool.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
               type="button"
-              className="-ml-px relative justify-center items-center px-4 py-2 rounded-md md:rounded-none border md:rounded-r-md text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
+              className="-ml-px relative justify-center items-center px-4 py-2 rounded-md md:rounded-none border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
             >
               PoolTool
+            </a>
+                        <a
+              rel="nofollow"
+              href="https://adastat.net/pools/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
+              type="button"
+              className="-ml-px relative justify-center items-center px-4 py-2 rounded-md md:rounded-none border md:rounded-r-md text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
+            >
+              AdaStat
             </a>
           </span>
 
@@ -65,7 +73,7 @@ const Hometop = () => {
             The Star Forge was built to showcase just how efficient the Cardano
             blockchain can be.
           </p>
-          <p className="m-2 font-semibold tracking-tight sm:text-3xl">
+          <p className="mt-2 font-semibold tracking-tight text-3xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-teal-500 lg:text-4xl">
             Ticker = OTG
           </p>
         </div>
@@ -158,7 +166,7 @@ const Hometop = () => {
                 and of course my work with the{" "}
                 <a href="https://armada-alliance.com/">Armada Alliance</a>.
               </p>
-              
+
               <p>
                 I provide support to other Stake Pool operators, writing guides
                 and providing a flashable image to quickly spin up and{" "}

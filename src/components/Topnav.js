@@ -4,7 +4,7 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Menulist from "./Menulist";
 
 
-export default function topNav() {
+const topNav = () => {
   return (
     <Popover>
       <nav
@@ -100,3 +100,4 @@ export default function topNav() {
     </Popover>
   );
 }
+export default topNav;

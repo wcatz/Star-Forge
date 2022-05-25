@@ -1,6 +1,8 @@
 import Topnav from "../../components/Topnav";
 import { useEffect } from "react";
 import { themeChange } from "theme-change";
+import PoolStats from "../../components/PoolStats";
+
 import Menu from "../../components/Menu";
 import M3 from "./images/m3-star-forge.jpg";
 import CP from "./images/completed-packs.jpg";
