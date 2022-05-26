@@ -26,7 +26,7 @@ const PoolStats = () => {
               <th>ACTIVE STAKE</th>
               <th>BLOCKS</th>
               <th>DELEGATE PAYOUT</th>
-              <th>EPOCH ROS</th>
+              <th>EPOCH RO₳</th>
               <th>OPERATOR FEE</th>
             </tr>
           </thead>

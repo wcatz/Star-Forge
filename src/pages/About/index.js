@@ -14,121 +14,23 @@ export function AboutPage() {
     <>
       <Topnav />
       <Menu />
-      <svg
-        className="hidden xl:block absolute top-48 right-2 text-accent"
-        width={404}
-        height={384}
-        fill="none"
-        viewBox="0 0 404 384"
-        aria-hidden="true"
-      >
-        <defs>
-          <pattern
-            id="de316486-4a29-4312-bdfc-fbce2132a2c1"
-            x={0}
-            y={0}
-            width={20}
-            height={20}
-            patternUnits="userSpaceOnUse"
-          >
-            <rect
-              x={0}
-              y={0}
-              width={4}
-              height={4}
-              className=""
-              fill="currentColor"
-            />
-          </pattern>
-        </defs>
-        <rect
-          width={404}
-          height={384}
-          fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
-        />
-      </svg>
-      <svg
-        className="hidden xl:block absolute -bottom-1/2 left-2"
-        width={404}
-        height={384}
-        fill="none"
-        viewBox="0 0 404 384"
-        aria-hidden="true"
-      >
-        <defs>
-          <pattern
-            id="de316486-4a29-4312-bdfc-fbce2132a2c1"
-            x={0}
-            y={0}
-            width={20}
-            height={20}
-            patternUnits="userSpaceOnUse"
-          >
-            <rect
-              x={0}
-              y={0}
-              width={4}
-              height={4}
-              className=""
-              fill="currentColor"
-            />
-          </pattern>
-        </defs>
-        <rect
-          width={404}
-          height={384}
-          fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
-        />
-      </svg>
-      <svg
-        className="hidden xl:block absolute -bottom-full right-2 text-accent"
-        width={404}
-        height={384}
-        fill="none"
-        viewBox="0 0 404 384"
-        aria-hidden="true"
-      >
-        <defs>
-          <pattern
-            id="de316486-4a29-4312-bdfc-fbce2132a2c1"
-            x={0}
-            y={0}
-            width={20}
-            height={20}
-            patternUnits="userSpaceOnUse"
-          >
-            <rect
-              x={0}
-              y={0}
-              width={4}
-              height={4}
-              className=""
-              fill="currentColor"
-            />
-          </pattern>
-        </defs>
-        <rect
-          width={404}
-          height={384}
-          fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
-        />
-      </svg>
+    
       <div className="py-16 overflow-hidden">
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto">
             <h1>
-              <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl">
-                About
+              <span className="mt-2 block font-semibold tracking-wider text-3xl bg-clip-text text-transparent bg-gradient-to-r from-accent to-teal-500 lg:text-4xl">
+                Few details about the pool
               </span>
             </h1>
             <p className="mt-8 text-xl leading-8">
-              Hello, my name is{" "}
+              Pool operated by{" "}
               <a
                 rel="nofollow"
                 className="underline"
                 href="https://armada-alliance.com/identities/wcat-otg"
               >
-                WCat (Wayne)
+                WCat
               </a>
               . I run a totally off the grid stakepool using solar panels,
               LiFePo4 batteries Apple Silicon and Starlink. I am a founding
@@ -136,12 +38,19 @@ export function AboutPage() {
               <a className="underline" href="https://armada-alliance.com">
                 Armada Alliance
               </a>{" "}
-              & spend most of my time helping single stake pool operators run on
-              efficient arm based computers.
+              & on the core dev team for{" "}
+              <a
+                rel="nofollow"
+                href="https://tosidrop.io/"
+                className="underline"
+              >
+                Tosidrop
+              </a>
+              . I spend most of my time helping single stake pool operators run
+              on efficient arm based computers.
             </p>
           </div>
           <div className="mt-6 prose prose-indigo prose-lg mx-auto">
-          <Stake />
             <p>
               Learn how to run cardano-node on a Raspberry Pi 4 & interact with
               the blockchain or build a stake pool.
@@ -179,7 +88,9 @@ export function AboutPage() {
               The block producer is isolated on a seperate vlan with it's own 1
               Gbps interface connected directly to Starlinks power brick.
             </p>
-            <h2>🌟 Security & Privacy</h2>
+            <h2 className="font-semibold tracking-wider text-3xl bg-clip-text text-transparent bg-gradient-to-r from-accent to-teal-500 lg:text-4xl">
+              Security & Privacy
+            </h2>
             <p>
               The Turris Omnia is an amazing router with{" "}
               <a
@@ -230,9 +141,13 @@ export function AboutPage() {
                 title="Cardano Stake Pool"
                 alt="M1 Mini Stake Pool"
               />
-              <figcaption>You know you wanna stake here..</figcaption>
+              <figcaption>
+                You know you wanna stake here.. <Stake />
+              </figcaption>
             </figure>
-            <h2>⚡ Powerwall Specs (Deprecated)</h2>
+            <h2 className="font-semibold tracking-wider text-3xl bg-clip-text text-transparent bg-gradient-to-r from-accent to-teal-500 lg:text-4xl">
+              Powerwall Specs (Deprecated)
+            </h2>
             <p>
               Originally I had built a Tesla style Powerwall with lithium ion
               cells reclaimed from old laptop batteries. it was capable of

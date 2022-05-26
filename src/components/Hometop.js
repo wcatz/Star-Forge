@@ -1,6 +1,7 @@
 import Cover from "../pages/About/images/better-img.png";
 import { ReactComponent as Logo } from "../pages/Gallery/images/Star-Forge-Logo-06.svg";
 import Stake from "./DelegateNami";
+import TosiDrop from "../pages/Home/TosiDrop.webm";
 
 const Hometop = () => {
   return (
@@ -11,7 +12,7 @@ const Hometop = () => {
 
           <h1 className="text-4xl mt-5 uppercase font-extrabold tracking-wider bg-clip-text lg:text-5xl">
             🌟{" "}
-            <span className="mt-5 uppercase font-extrabold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-teal-500 text-4xl lg:text-5xl">
+            <span className="mt-5 uppercase font-extrabold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-accent to-teal-500 text-4xl lg:text-5xl">
               Star Forge
             </span>{" "}
             ⚡
@@ -20,7 +21,7 @@ const Hometop = () => {
             <Logo className="m-4 h-28" />
           </div>
 
-          <p className="mt-2 font-semibold tracking-wider text-3xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-teal-500 lg:text-4xl">
+          <p className="mt-2 font-semibold tracking-wider text-3xl bg-clip-text text-transparent bg-gradient-to-r from-accent to-teal-500 lg:text-4xl">
             Cardano Stake Pool
           </p>
           <span className="inline-grid gap-4 md:gap-0 md:grid-cols-6 grid-cols-2 justify-center relative m-5 z-0">
@@ -72,7 +73,7 @@ const Hometop = () => {
             The Star Forge was built to showcase just how efficient the Cardano
             blockchain can be.
           </p>
-          <p className="mt-2 font-semibold tracking-tight text-3xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-teal-500 lg:text-4xl">
+          <p className="mt-2 font-semibold tracking-tight text-3xl bg-clip-text text-transparent bg-gradient-to-r from-accent to-teal-500 lg:text-4xl">
             Ticker = OTG
           </p>
         </div>
@@ -81,7 +82,7 @@ const Hometop = () => {
         <div className="hidden lg:block absolute top-0 bottom-0 left-3/4 w-screen" />
         <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
           <div>
-            <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
+            <h3 className="text-center mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-accent to-teal-500">
               Off The Grid Stake Pool
             </h3>
           </div>
@@ -137,6 +138,15 @@ const Hometop = () => {
           </div>
           <div className="mt-8 lg:mt-0">
             <div className="text-base max-w-prose mx-auto lg:max-w-none">
+                        <a
+              rel="nofollow"
+              href="https://tosidrop.io/"
+              tabIndex="0"
+              type="button"
+              className=""
+            >
+              <video className="mb-5 rounded-xl outline outline-2 outline-accent" src={TosiDrop} width="750" height="500" autoPlay muted playsInline loop></video>
+              </a>
               <p className="text-lg">
                 The{" "}
                 <a
