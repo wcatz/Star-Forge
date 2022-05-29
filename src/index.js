@@ -14,7 +14,7 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 root.render(
 
-  <SWRConfig value={{ revalidateOnFocus: false, fetcher,  suspense: true  }}>
+  <SWRConfig value={{ fetcher,  suspense: true }}>
   <BrowserRouter>
     <App />
   </BrowserRouter>

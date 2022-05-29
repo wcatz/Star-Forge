@@ -1,23 +1,33 @@
 import { useRequest } from "../useGetRequest";
 import NumberFormat from "react-number-format";
+import { EyeIcon } from "@heroicons/react/solid";
 
 const PoolStats = () => {
   const { result } = useRequest(
     "pool_history?_pool_bech32=pool1eqj3dzpkcklc2r0v8pt8adrhrshq8m4zsev072ga7a52uj5wv5c",
     "&limit=5"
   );
+  console.log({result});
 
   return (
     <div className="my-5">
       <div className="flex items-center">
         <div className="flex-auto">
-          <h1 className="text-xl font-semibold">Latest Pool Stats</h1>
-          <p className="my-2">
+          <h1 className="leading-8 font-extrabold tracking-tight font- text-4xl bg-clip-text text-transparent bg-gradient-to-r from-accent to-teal-500">Latest Pool Stats</h1>
+          <p className="my-5">
             Information about pools performance/rewards for the last 5 payouts
           </p>
         </div>
       </div>
+        <div className="mt-4">
+        <div className="relative">
+            <span className="absolute -bottom-6 left-auto inline-flex items-center justify-center p-3 bg-primary-500 rounded-md z-50">
+              <EyeIcon className="h-6 w-6" aria-hidden="true" />
+            </span>
+            </div>
+        </div>
       <div className="overflow-auto mb-1 border-2 border-accent rounded-lg">
+
         <table className="table table-zebra w-full">
           <thead className="">
             <tr>
@@ -31,22 +41,22 @@ const PoolStats = () => {
             </tr>
           </thead>
           <tbody>
-            {result.map((data, key) => (
+            {result.map((res, key) => (
               <tr className="hover" key={key}>
-                <td className="sm:pl-6">{data.epoch_no}</td>
+                <td className="sm:pl-6">{res.epoch_no}</td>
                 <td className="">
                   <NumberFormat
-                    value={data.active_stake / 1000000000000}
+                    value={res.active_stake / 1000000000000}
                     displayType={"text"}
                     thousandSeparator={true}
                     decimalScale={2}
                     suffix=" M ₳"
                   />
                 </td>
-                <td className="">{data.block_cnt}</td>
+                <td className="">{res.block_cnt}</td>
                 <td className="">
                   <NumberFormat
-                    value={data.deleg_rewards / 100000}
+                    value={res.deleg_rewards / 100000}
                     displayType={"text"}
                     thousandSeparator={true}
                     decimalScale={0}
@@ -55,7 +65,7 @@ const PoolStats = () => {
                 </td>
                 <td className="">
                   <NumberFormat
-                    value={data.epoch_ros}
+                    value={res.epoch_ros}
                     displayType={"text"}
                     thousandSeparator={true}
                     decimalScale={2}
@@ -64,7 +74,7 @@ const PoolStats = () => {
                 </td>
                 <td className="">
                   <NumberFormat
-                    value={data.pool_fees / 1000000}
+                    value={res.pool_fees / 1000000}
                     displayType={"text"}
                     thousandSeparator={true}
                     decimalScale={0}

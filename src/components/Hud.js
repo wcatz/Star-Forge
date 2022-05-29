@@ -1,10 +1,8 @@
 import useSWR from "swr";
-//import { Suspense } from 'react'
-
 import NumberFormat from "react-number-format";
 
 let url =
-  "https://cors.adamantium.online/https://api.koios.rest/api/v0/pool_info";
+  "https://cors.adamantium.online/127.0.0.1:8053/api/v0/pool_info";
 
 const Hud = () => {
   const fetcher = (...args) =>

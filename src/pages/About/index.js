@@ -1,3 +1,4 @@
+import * as React from "react";
 import Topnav from "../../components/Topnav";
 import { useEffect } from "react";
 import { themeChange } from "theme-change";
@@ -5,6 +6,9 @@ import Menu from "../../components/Menu";
 import M3 from "./images/m3-star-forge.jpg";
 import CP from "./images/completed-packs.jpg";
 import Stake from "../../components/DelegateNami";
+
+//import { Suspense } from "react";
+//const EpochClock = React.lazy(() => import("../../components/EpochClock"));
 
 export function AboutPage() {
   useEffect(() => {
@@ -14,7 +18,7 @@ export function AboutPage() {
     <>
       <Topnav />
       <Menu />
-    
+
       <div className="py-16 overflow-hidden">
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto">
@@ -88,6 +92,72 @@ export function AboutPage() {
               The block producer is isolated on a seperate vlan with it's own 1
               Gbps interface connected directly to Starlinks power brick.
             </p>
+            <p className="text-lg">
+                The{" "}
+                <a
+                  className="underline"
+                  href="https://cardanoscan.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
+                >
+                  Star Forge
+                </a>{" "}
+                is solar powered with 2 weeks of LiFePo4 battery storage and
+                connected to the internet through Starlink with a failover onto
+                cable internet provider. The pool consumes just 110 watts of
+                power.
+              </p>
+
+              <p>
+                There is a{" "}
+                <a href="https://testnet.cardanoscan.io/pool/62b968226866ba28af09bd9e6cb700df979aff5b51aedbd49ee90cb6">
+                  Star Forge testnet pool
+                </a>
+                , 2 <a href="https://www.freeloaderz.io/">Freeloaderz</a> submit
+                endpoints,{" "}
+                <a className="underline" href="https://www.koios.rest/">
+                  Koios
+                </a>{" "}
+                and of course my work with the{" "}
+                <a href="https://armada-alliance.com/">Armada Alliance</a>.
+              </p>
+
+              <p>
+                I provide support to other Stake Pool operators, writing guides
+                and providing a flashable image to quickly spin up and{" "}
+                <a href="https://docs.armada-alliance.com/learn/stake-pool-guides/pi-pool-tutorial/pi-node-full-guide">
+                  sync a node within an hour on a Raspberry Pi.
+                </a>
+              </p>
+              <ul className="">
+                <li>
+                  <a href="https://www.apple.com/shop/buy-mac/mac-mini/apple-m1-chip-with-8-core-cpu-and-8-core-gpu-512gb">
+                    Mac M1 Mini
+                  </a>{" "}
+                  x3 <a href="https://asahilinux.org">Asahi Arch Linux</a>
+                </li>
+                <li>
+                  <a href="https://www.turris.com/en/omnia/overview/">
+                    Turris Omnia
+                  </a>{" "}
+                  open source router
+                </li>
+                <li>
+                  <a href="https://www.starlink.com/">Starlink</a> internet
+                  service provider
+                </li>
+                <li>
+                  <a href="https://www.victronenergy.com/">Victron Solar</a>{" "}
+                  MPPT charge controller and inverter
+                </li>
+              </ul>
+              <p>
+                True decentralization of the Cardano blockchain provides
+                security to everyones investment. Staking to a baremetal single
+                pool operator is extremely important and it is up to you to
+                stake responsibly. The Star Forge is doing it's part by
+                providing an extremely efficient and secure option. Please
+                support my work by delegating to my pool. Thank you!
+              </p>
+            
             <h2 className="font-semibold tracking-wider text-3xl bg-clip-text text-transparent bg-gradient-to-r from-accent to-teal-500 lg:text-4xl">
               Security & Privacy
             </h2>
@@ -173,6 +243,7 @@ export function AboutPage() {
               with 5 amp fast blow glass fuses on both sides. The soldering
               itself took over 50 hours.
             </p>
+            
           </div>
         </div>
       </div>

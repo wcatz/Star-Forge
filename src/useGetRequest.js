@@ -1,13 +1,13 @@
 import useSWR from "swr";
 
-const baseUrl = "https://cors.adamantium.online/https://koi3.psilobyte.io/api/v0/";
+const baseUrl = "https://cors.adamantium.online/127.0.0.1:8053/api/v0/";
 
-export const useRequest = (path, filter) => {
+export const useRequest = (path, filter, options) => {
   if (!path) {
     throw new Error("Path is required");
   }
 
-  const { data: result } = useSWR(baseUrl + path + filter);
+  const { data: result } = useSWR(baseUrl + path + filter, options);
   if (!result)
     return (
       <div className="flex justify-center items-center mb-10">
@@ -23,7 +23,7 @@ export const useRequest = (path, filter) => {
       </div>
     );
 
-  console.log(result);
+  //console.log(result);
  
   return ({result})
 };

@@ -46,14 +46,14 @@ const Homemiddle = () => {
                   <div className="flow-root bg-secondary bg-opacity-50 mb-1 border-t-2 border-2 border-accent rounded-lg px-6 pb-8 h-full">
                     <div className="-mt-6">
                       <div>
-                        <span className="inline-flex items-center justify-center p-3 bg-primary-500 rounded-md shadow-lg">
+                        <span className="inline-flex items-center justify-center p-3 bg-primary-500 rounded-md">
                           <feature.icon
                             className="h-6 w-6"
                             aria-hidden="true"
                           />
                         </span>
                       </div>
-                      <h3 className="mt-8 text-lg font-medium tracking-tight">
+                      <h3 className="mt-8 leading-8 font-extrabold tracking-tight text-3xl bg-clip-text text-transparent bg-gradient-to-r from-accent to-teal-500">
                         {feature.name}
                       </h3>
                       <p className="mt-5 text-base">{feature.description}</p>
