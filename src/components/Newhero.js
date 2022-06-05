@@ -35,7 +35,6 @@ const Newhero = () => {
                 messages={[
                   "Welcome traveler.",
                   "Forge authenticated",
-                  "with Ouroboros.",
                   "All systems nominal.",
                   "Have a nice day.",
                 ]}

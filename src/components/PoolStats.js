@@ -5,7 +5,7 @@ import { EyeIcon } from "@heroicons/react/solid";
 const PoolStats = () => {
   const { result } = useRequest(
     "pool_history?_pool_bech32=pool1eqj3dzpkcklc2r0v8pt8adrhrshq8m4zsev072ga7a52uj5wv5c",
-    "&limit=5"
+    "&limit=6"
   );
   console.log({result});
 
@@ -41,7 +41,7 @@ const PoolStats = () => {
             </tr>
           </thead>
           <tbody>
-            {result.map((res, key) => (
+            {result.slice(1).map((res, key) => (
               <tr className="hover" key={key}>
                 <td className="sm:pl-6">{res.epoch_no}</td>
                 <td className="">

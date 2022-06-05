@@ -3,8 +3,9 @@ import { Suspense } from "react";
 import Cover from "../pages/About/images/better-img.png";
 import { ReactComponent as Logo } from "../pages/Gallery/images/Star-Forge-Logo-06.svg";
 import Stake from "./DelegateNami";
-import DelegateNow from "./DelegateNamiLarge"
-import TosiDrop from "../pages/Home/TosiDrop.webm";
+import DelegateNow from "./DelegateNamiLarge";
+import TosiDropwbm from "../pages/Home/TosiDrop.webm";
+import TosiDropmp4 from "../pages/Home/TosiDrop.mp4";
 
 const EpochClock = React.lazy(() => import("./EpochClock"));
 
@@ -77,9 +78,10 @@ const Hometop = () => {
             </a>
           </span>
 
-          <p className="mb-10 mt-5 w-1/2 max-w-prose mx-auto text-xl">
-            The Star Forge is a solar powered Starlink connected Off The Grid
-            Cardano Stake Pool with 2 weeks of LiFePo4 battery storage.
+          <p className="container-fluid mb-10 mt-5 max-w-prose mx-auto text-xl">
+            The Star Forge is a fully ARM'ed solar powered Starlink connected
+            Off The Grid Cardano Stake Pool with 2 weeks of LiFePo4 battery
+            storage.
           </p>
         </div>
       </div>
@@ -145,15 +147,17 @@ const Hometop = () => {
                 className=""
               >
                 <video
-                  className="mb-5 rounded-xl outline outline-2 outline-accent "
-                  src={TosiDrop}
+                  className="mb-5 rounded-xl outline outline-2 outline-accent"
                   width="750"
                   height="500"
                   autoPlay
                   muted
                   playsInline
                   loop
-                ></video>
+                >
+                  <source src={TosiDropmp4} type="video/mp4" />
+                  <source src={TosiDropwbm} type="video/webm" />
+                </video>
               </a>
               <div>
                 <div>
@@ -191,19 +195,16 @@ const Hometop = () => {
               </p>
               <p className="mb-10 mt-5 max-w-prose mx-auto text-xl">
                 From there you can either connect your dapp capable wallet or
-                manually enter your wallets stake key or a recieving address from the wallet currently staked to the pool
-                You will be presented with a list of current token
-                distributions. You can choose to claim all of them or only the
-                ones you want.
+                manually enter your wallets stake key or a recieving address
+                from the wallet currently staked to the pool You will be
+                presented with a list of current token distributions. You can
+                choose to claim all of them or only the ones you want.
               </p>
-              
-
             </div>
             <div className="justify-center items-center">
-            <DelegateNow />
+              <DelegateNow />
             </div>
           </div>
-          
         </div>
       </div>
     </div>
