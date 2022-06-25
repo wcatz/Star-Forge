@@ -35,7 +35,7 @@ const Hud = () => {
       </div>
     );
 
-  //console.log(result);
+  console.log(result);
   let res = result;
 
   return (
@@ -54,7 +54,7 @@ const Hud = () => {
             <dt className="text-sm font-medium truncate">Pledge</dt>
             <dd className="mt-1 text-3xl font-semibold 0">
               <NumberFormat
-                value={res[0].live_pledge / 1000000000}
+                value={500}
                 displayType={"text"}
                 thousandSeparator={true}
                 decimalScale={0}

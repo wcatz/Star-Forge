@@ -44,7 +44,22 @@ const files = [
   {
     title: "Learn to Build",
     caption: "Guide and Image for Pi-Node",
-    source: images["star-forge-cardano-stake-pool.jpg"],
+    source: images["cardano-stake-pool.jpg"],
+  },
+    {
+    title: "ARM64 Devops",
+    caption: "Mobile Haskell",
+    source: images["pine-phone-node.jpg"],
+  },
+    {
+    title: "Hand Made Powerwall",
+    caption: "Original Storage Bank  (deprecated)",
+    source: images["powerwall-fuse-positive.jpg"],
+  },
+    {
+    title: "18650 Powerwall",
+    caption: "Lithium Ion Powerwall, reclaimed cells",
+    source: images["18650-powerwall.jpg"],
   },
 ];
 
@@ -68,12 +83,6 @@ export function GalleryPage() {
                   alt={file.caption}
                   className="object-cover"
                 />
-                <button
-                  type="button"
-                  className="absolute inset-0"
-                >
-                  <span className="sr-only">View details for {file.title}</span>
-                </button>
               </div>
               <p className="mt-2 block text-sm font-medium text-center truncate">
                 {file.title}
