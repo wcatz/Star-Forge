@@ -1,8 +1,7 @@
 import useSWR from "swr";
 import NumberFormat from "react-number-format";
 
-let url =
-  "https://cors.adamantium.online/127.0.0.1:8053/api/v0/pool_info";
+let url = "https://cors.adamantium.online/127.0.0.1:8053/api/v0/pool_info";
 
 const Hud = () => {
   const fetcher = (...args) =>
@@ -39,15 +38,15 @@ const Hud = () => {
   let res = result;
 
   return (
-    
     <div className="hidden lg:block">
       <div className="flex justify-center text-center">
         <dl className="flex flex-cols-1 gap-2 sm:flex-cols-7 bg-secondary bg-opacity-50 mb-1 border-t-2 border-l-2 border-r-2 border-accent rounded-t-lg">
           <div className="px-4 py-5 sm:p-6">
             <dt className="text-sm font-medium truncate">Blocks</dt>
-            <dd className="mt-1 text-3xl font-semibold 0">{res[0].block_count}</dd>
-            <div className="stat-desc text-green-400">
-            </div>
+            <dd className="mt-1 text-3xl font-semibold 0">
+              {res[0].block_count}
+            </dd>
+            <div className="stat-desc text-green-400"></div>
           </div>
 
           <div className="px-4 py-5 sm:p-6">
@@ -83,13 +82,16 @@ const Hud = () => {
           </div>
           <div className="px-4 py-5 sm:p-6">
             <dt className="text-sm font-medium truncate">Delegators</dt>
-            <dd className="mt-1 text-3xl font-semibold 0">{res[0].live_delegators}</dd>
+            <dd className="mt-1 text-3xl font-semibold 0">
+              {res[0].live_delegators}
+            </dd>
           </div>
           <div className="px-4 py-5 sm:p-6">
             <dt className="text-sm font-medium truncate">Saturation</dt>
-            <dd className="mt-1 text-3xl font-semibold 0">{res[0].live_saturation}%</dd>
+            <dd className="mt-1 text-3xl font-semibold 0">
+              {res[0].live_saturation}%
+            </dd>
           </div>
-
         </dl>
       </div>
     </div>
@@ -97,4 +99,3 @@ const Hud = () => {
 };
 
 export default Hud;
-

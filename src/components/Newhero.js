@@ -2,6 +2,7 @@ import * as React from "react";
 import Typer from "./CursorImitator";
 import { Suspense } from "react";
 import Topnav from "./Topnav";
+import Tosi_Matrix from "../pages/Home/Tosi_Matrix.mp4";
 
 //const EpochClock = React.lazy(() => import("./EpochClock"));
 const Hud = React.lazy(() => import("./Hud"));

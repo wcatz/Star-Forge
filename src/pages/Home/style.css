@@ -1,14 +1,10 @@
 
-[data-theme="luxury"] .starscreen {
+.starscreen {
   height: 75vh;
   background-image: url("./stake-pool-hero.jpg");
   
 }
-[data-theme="otg"] .starscreen {
-  height: 75vh;
-  background-image: url("./stake-pool-hero.jpg");
-  
-}
+
 .menu :where(li:not(.menu-title):not(:empty)) > :where(:not(ul).active), .menu :where(li:not(.menu-title):not(:empty)) > :where(*:not(ul):active) {
   --tw-bg-opacity: .5;
   background-color: none;
