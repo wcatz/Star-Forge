@@ -28,7 +28,20 @@ const Newhero = () => {
           style={{ backgroundImage: "url(../../stake-pool-hero.jpg)" }}
         >
           <Topnav />
-
+          <div class="flex justify-end absolute overflow-hidden inset-x-10 top-48">
+            <div className="">
+              <video
+                className="opacity-50 rounded-t-full rounded-b-xl "
+                width="170"
+                autoPlay
+                muted
+                playsInline
+                loop
+              >
+                <source src={Tosi_Matrix} type="video/mp4" />
+              </video>
+            </div>
+          </div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
             <div className="flex transform translate-x-1/2 -ml-44 overflow-hidden">
               <Typer
