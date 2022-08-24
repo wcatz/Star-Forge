@@ -28,10 +28,10 @@ const Newhero = () => {
           style={{ backgroundImage: "url(../../stake-pool-hero.jpg)" }}
         >
           <Topnav />
-          <div class="flex justify-end absolute overflow-hidden inset-x-10 top-48">
+          <div className="flex justify-end absolute overflow-hidden inset-x-10 top-48 ">
             <div className="">
               <video
-                className="opacity-50 rounded-t-full rounded-b-xl "
+                className="opacity-50 rounded-t-full rounded-b-xl hidden lg:block"
                 width="170"
                 autoPlay
                 muted

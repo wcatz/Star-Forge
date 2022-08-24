@@ -35,7 +35,7 @@ const Hometop = () => {
           </p>
           <span className="inline-grid gap-4 md:gap-0 md:grid-cols-6 grid-cols-2 justify-center relative m-5 z-0">
             <Stake />
-            <a
+            <button
               rel="nofollow"
               href="https://tosidrop.io/"
               tabIndex="0"
@@ -43,39 +43,39 @@ const Hometop = () => {
               className="-ml-px relative justify-center items-center px-4 py-2 rounded-md md:rounded-none border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
             >
               Tosidrop ☔
-            </a>
-            <a
+            </button>
+            <button
               rel="nofollow"
               type="button"
               href="https://pool.pm/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
               className="-ml-px relative justify-center items-center px-4 py-2 rounded-md md:rounded-none border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
             >
               PoolPM
-            </a>
-            <a
+            </button>
+            <button
               rel="nofollow"
               href="https://cardanoscan.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
               type="button"
               className="-ml-px relative justify-center items-center px-4 py-2 rounded-md md:rounded-none border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
             >
               Cardanoscan
-            </a>
-            <a
+            </button>
+            <button
               rel="nofollow"
               href="https://pooltool.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
               type="button"
               className="-ml-px relative justify-center items-center px-4 py-2 rounded-md md:rounded-none border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
             >
               PoolTool
-            </a>
-            <a
+            </button>
+            <button
               rel="nofollow"
               href="https://adatools.io/pools/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
               type="button"
               className="-ml-px relative justify-center items-center px-4 py-2 rounded-md md:rounded-none border md:rounded-r-md text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
             >
               AdaTools
-            </a>
+            </button>
           </span>
 
           <p className="container-fluid mb-10 mt-5 max-w-prose mx-auto text-xl">
@@ -127,7 +127,7 @@ const Hometop = () => {
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                   <img
-                    className="rounded-lg shadow-lg object-cover object-center outline outline-2 outline-accent"
+                    className="rounded-lg shadow-lg object-cover object-center ring-2 ring-accent"
                     src={Cover}
                     alt="Cardano Stake Pool Star Forge"
                     width={599}
@@ -139,15 +139,8 @@ const Hometop = () => {
           </div>
           <div className="mt-8 lg:mt-0">
             <div className="text-base max-w-prose mx-auto lg:max-w-none">
-              <a
-                rel="nofollow"
-                href="https://tosidrop.io/"
-                tabIndex="0"
-                type="button"
-                className=""
-              >
                 <video
-                  className="mb-5 rounded-xl outline outline-2 outline-accent"
+                  className="mb-5 rounded-xl ring-2 ring-accent"
                   width="750"
                   height="500"
                   autoPlay
@@ -158,26 +151,8 @@ const Hometop = () => {
                   <source src={TosiDropmp4} type="video/mp4" />
                   <source src={TosiDropwbm} type="video/webm" />
                 </video>
-              </a>
-              <div>
-                <div>
-                  {" "}
-                  <h4 className="text-center leading-8 tracking-tight">
-                    Next Drop In
-                  </h4>
-                </div>
-                <div className="-mb-5 flex justify-center items-center">
-                  <Suspense
-                    fallback={
-                      <div className="flex justify-center items-center mb-10">
-                        <div className="animate-spin rounded-full h-10 w-10 border-t-2 border-b-2 border-indigo-500"></div>
-                      </div>
-                    }
-                  >
-                    <EpochClock />
-                  </Suspense>
-                </div>
-              </div>
+
+
               <p className="mb-10 mt-8 max-w-prose mx-auto text-xl">
                 To be eligible to claim all you have to do is stake your ADA to
                 the Star Forge. That's it, then at the beggining of every epoch
