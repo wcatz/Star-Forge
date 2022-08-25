@@ -35,47 +35,44 @@ const Hometop = () => {
           </p>
           <span className="inline-grid gap-4 md:gap-0 md:grid-cols-6 grid-cols-2 justify-center relative m-5 z-0">
             <Stake />
-            <button
+            <a
               rel="nofollow"
               href="https://tosidrop.io/"
               tabIndex="0"
-              type="button"
               className="-ml-px relative justify-center items-center px-4 py-2 rounded-md md:rounded-none border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
             >
               Tosidrop ☔
-            </button>
-            <button
+            </a>
+            <a
               rel="nofollow"
-              type="button"
               href="https://pool.pm/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
               className="-ml-px relative justify-center items-center px-4 py-2 rounded-md md:rounded-none border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
             >
               PoolPM
-            </button>
-            <button
+            </a>
+            <a
               rel="nofollow"
               href="https://cardanoscan.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
-              type="button"
+
               className="-ml-px relative justify-center items-center px-4 py-2 rounded-md md:rounded-none border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
             >
               Cardanoscan
-            </button>
-            <button
+            </a>
+            <a
               rel="nofollow"
               href="https://pooltool.io/pool/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
-              type="button"
+    
               className="-ml-px relative justify-center items-center px-4 py-2 rounded-md md:rounded-none border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
             >
               PoolTool
-            </button>
-            <button
+            </a>
+            <a
               rel="nofollow"
               href="https://adatools.io/pools/c825168836c5bf850dec38567eb4771c2e03eea28658ff291df768ae"
-              type="button"
               className="-ml-px relative justify-center items-center px-4 py-2 rounded-md md:rounded-none border md:rounded-r-md text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 btn-ghost border-accent hover:border-accent"
             >
               AdaTools
-            </button>
+            </a>
           </span>
 
           <p className="container-fluid mb-10 mt-5 max-w-prose mx-auto text-xl">
